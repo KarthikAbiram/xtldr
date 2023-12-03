@@ -1,0 +1,747 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
+    
+    
+      
+        <title>Github - xTLDR</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fad675c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/toc_custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#creating-a-github-account" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="xTLDR" class="md-header__button md-logo" aria-label="xTLDR" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            xTLDR
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Github
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="xTLDR" class="md-nav__button md-logo" aria-label="xTLDR" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    xTLDR
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to MkDocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Github
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Github
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-github-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a GitHub Account
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-github-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a GitHub Repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-git-in-your-pc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Git in Your PC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-your-pc-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Your PC to GitHub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding Your PC to GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-ssh-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate SSH Key
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-your-private-ssh-key-to-ssh-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Your Private SSH Key to SSH Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-your-public-ssh-key-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Your Public SSH Key to GitHub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-identity-keys-to-ssh-config-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Identity Keys to SSH Config File
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#override-user-name-and-email-for-each-repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Override User Name and Email for Each Repo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-gpg-secret-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add GPG Secret Key
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commit-your-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commit Your Changes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing-to-open-source-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing to Open Source Projects
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contributing to Open Source Projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-github-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a GitHub Account
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-github-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a GitHub Repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-git-in-your-pc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Git in Your PC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-your-pc-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Your PC to GitHub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding Your PC to GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-ssh-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate SSH Key
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-your-private-ssh-key-to-ssh-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Your Private SSH Key to SSH Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-your-public-ssh-key-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Your Public SSH Key to GitHub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-identity-keys-to-ssh-config-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Identity Keys to SSH Config File
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#override-user-name-and-email-for-each-repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Override User Name and Email for Each Repo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-gpg-secret-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add GPG Secret Key
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commit-your-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commit Your Changes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing-to-open-source-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing to Open Source Projects
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contributing to Open Source Projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Github</h1>
+
+<h2 id="creating-a-github-account">Creating a GitHub Account</h2>
+<p>TBD</p>
+<h2 id="creating-a-github-repository">Creating a GitHub Repository</h2>
+<p>TBD</p>
+<h2 id="install-git-in-your-pc">Install Git in Your PC</h2>
+<p>TBD</p>
+<h2 id="adding-your-pc-to-github">Adding Your PC to GitHub</h2>
+<h3 id="generate-ssh-key">Generate SSH Key</h3>
+<ol>
+<li>Open Git Bash from Start Menu.</li>
+<li>Check if there are SSH keys already in your system under ".ssh" folder, using below command in git bash. The "-al" argument is for listing all files, with a separate line for each file name.
+  <code>ls -al ~/.ssh</code></li>
+<li>If you see that a SSH key has already been created for the account that you want, you can skip this section and move to the next section.</li>
+<li>If you got an error saying that the .ssh folder doesn't exist, create it using below command.
+<code>mkdir .ssh</code></li>
+<li>Switch to the .ssh folder.
+<code>cd .ssh</code></li>
+<li>Create a SSH key in your system using below command. This command uses "rsa" algorithm, uses 4096 bits and uses email address as comment. Replace the email address with your email address.
+<code>ssh-keygen -t rsa -b 4096 -C youremail@example.com</code></li>
+<li>This would prompt for a file name. "id_rsa" would be the default file name. For using multiple accounts, its recommended to use an identifier along with the default name. Give a name that you can easily associate with the account. Eg: id_rsa_<github_username></li>
+<li>It would now prompt for a passphrase. Press enter twice if you would like to skip providing a passphrase.</li>
+<li>These steps now would have created the public and private key in the ".ssh" folder. You can use "ls" command to list the files in the current directory and verify.
+<code>ls</code></li>
+</ol>
+<h3 id="add-your-private-ssh-key-to-ssh-agent">Add Your Private SSH Key to SSH Agent</h3>
+<p>(May be, below are not needed. Confirm)
+1. Ensure that you are in ".ssh" folder by checking the present working directory command.
+<code>pwd</code>
+This would output something like
+<code>/c/Users/&lt;user_name&gt;/.ssh</code>
+2. If you are not yet in the .ssh folder, use change directory to go to the ".ssh" folder.
+<code>cd .ssh</code>
+3. Start SSH Agent using below command.
+<code>eval "$(ssh-agent -s)"</code>
+4. Add your SSH private key file, whose file name you had provided in the previous section. 
+<code>ssh-add id_rsa_&lt;github_username&gt;</code></p>
+<h3 id="add-your-public-ssh-key-to-github">Add Your Public SSH Key to GitHub</h3>
+<ol>
+<li>The ssh keys that you have created would be at <code>C:\Users\&lt;user_name&gt;\.ssh</code></li>
+<li>Go to above location and open the *.pub file in a text editor, which is your public key. Copy the contents of above file. </li>
+<li>Go to https://github.com/settings/keys and click on <strong>New SSH key</strong>. </li>
+<li>Give a name for your PC and paste the SSH key contents. Click <strong>Add SSH key</strong>.</li>
+</ol>
+<h2 id="add-identity-keys-to-ssh-config-file">Add Identity Keys to SSH Config File</h2>
+<p>If you had opted to save the file with a custom name other than "id_rsa", you need to add those file names to .ssh config file. The file needs to be created at below location without any extension:
+<code>C:\Users\&lt;user_name&gt;\.ssh\config</code>
+In this file, add below contents, one line for id_rsa file that you have created:
+<code>IdentityFile ~/.ssh/id_rsa_github_username_1
+IdentityFile ~/.ssh/id_rsa_github_username_2</code></p>
+<h2 id="override-user-name-and-email-for-each-repo">Override User Name and Email for Each Repo</h2>
+<p>By default, git would use the global user name and email for all repositories. To view the global user name and email configuration, you can use the below command:
+<code>git config --global -l</code>
+If you would like to use a different user name or email for a particular repo, you can override it for each repository using below commands using git bash from your repository directory:
+<code>git config --local user.name your_name
+git config --local user.email your_name@domain.com</code></p>
+<h2 id="add-gpg-secret-key">Add GPG Secret Key</h2>
+<p>If you get <code>gpg: signing failed: No secret key
+error: gpg failed to sign the data</code>, do the below steps:
+-   List the secret keys available in GPG.
+<code>gpg --list-secret-keys --keyid-format=long</code>
+-   Copy your key and set using below command:
+<code>git config --local user.signingkey your_key</code>
+Use --global if you would like to apply this for systemwide.</p>
+<h2 id="commit-your-changes">Commit Your Changes</h2>
+<p>TBD</p>
+<h2 id="contributing-to-open-source-projects">Contributing to Open Source Projects</h2>
+<ol>
+<li>Create a fork of the repo under your account</li>
+<li>Clone the above fork in your PC<ol>
+<li>git clone [url]</li>
+</ol>
+</li>
+<li>Create and checkout a new branch<ol>
+<li>git checkout -b [your-new-branch-name]</li>
+</ol>
+</li>
+<li>Make changes and commit with your signature<ol>
+<li>git commit -s -m [your commit message]</li>
+</ol>
+</li>
+<li>Push branch to your online repo<ol>
+<li>git push -u origin [your-new-branch-name]</li>
+</ol>
+</li>
+<li>Create a pull request with your new branch</li>
+</ol>
+<h3 id="tips">Tips</h3>
+<ol>
+<li>If you are in a conflicted state and want to go with "their" version:
+git checkout --theirs .
+git add .</li>
+</ol>
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      
+    
+  </body>
+</html>

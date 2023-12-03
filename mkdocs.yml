@@ -1,0 +1,22 @@
+site_name: xTLDR
+theme:
+  name: material
+  features:
+    - navigation.top
+  language: en
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+
+extra_css:
+  - assets/toc_custom.css
