@@ -4,14 +4,13 @@ hide:
 ---
 Github is one of the most popular git repositories for source code control (version tracking of code)
 
-## Is Github Free?
+## 💲 Is Github Free?
 Github has a free plan for both individuals and organizations, as well as paid plans. For more details, refer to https://github.com/pricing
 
-## Install Git in Your PC
-
+## 🛠️ Install Git in Your PC
 Install git from https://git-scm.com/downloads
 
-## PC Setup
+## 🛠️ PC Setup
 
 ### Generate SSH Key
 
@@ -51,7 +50,7 @@ This would output something like
  3. Go to https://github.com/settings/keys and click on **New SSH key**. 
  4. Give a name for your PC and paste the SSH key contents. Click **Add SSH key**.
 
-## Add Identity Keys to SSH Config File
+### Add Identity Keys to SSH Config File
 
 If you had opted to save the file with a custom name other than "id_rsa", you need to add those file names to .ssh config file. The file needs to be created at below location without any extension:
 `C:\Users\<user_name>\.ssh\config`
@@ -67,7 +66,7 @@ If you would like to use a different user name or email for a particular repo, y
 `git config --local user.name your_name
 git config --local user.email your_name@domain.com`
 
-## Add GPG Secret Key
+## Sign your Commits
 
 If you get `gpg: signing failed: No secret key
 error: gpg failed to sign the data`, do the below steps:
@@ -90,7 +89,7 @@ Use --global if you would like to apply this for systemwide.
 	5. git push -u origin [your-new-branch-name]
 6. Create a pull request with your new branch
 
-### Tips
+### 🧙 Tips
 
 1. If you are in a conflicted state and want to go with "their" version:
 git checkout --theirs .
