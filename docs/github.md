@@ -2,19 +2,16 @@
 hide:
   - navigation
 ---
-## Creating a GitHub Account
+Github is one of the most popular git repositories for source code control (version tracking of code)
 
-TBD
-
-## Creating a GitHub Repository
-
-TBD
+## Is Github Free?
+Github has a free plan for both individuals and organizations, as well as paid plans. For more details, refer to https://github.com/pricing
 
 ## Install Git in Your PC
 
-TBD
+Install git from https://git-scm.com/downloads
 
-## Adding Your PC to GitHub
+## PC Setup
 
 ### Generate SSH Key
 
@@ -79,10 +76,6 @@ error: gpg failed to sign the data`, do the below steps:
 -   Copy your key and set using below command:
 `git config --local user.signingkey your_key`
 Use --global if you would like to apply this for systemwide.
-
-## Commit Your Changes
-
-TBD
 
 ## Contributing to Open Source Projects
 
