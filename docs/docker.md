@@ -36,30 +36,60 @@ Few other terminologies:
 ## Docker Cheat Sheet
 https://docs.docker.com/get-started/docker_cheatsheet.pdf
 
-## Docker Commands
-### Docker Hub
+## Running Your First Docker Container
 You can search for images at [docker hub](https://hub.docker.com/). In the docker image page, you would have instructions on how to pull the image and use it. Example: https://hub.docker.com/_/mongo
 
 To pull (download) an image:
-
-`docker pull <image_name>`
+```
+docker pull <image_name>
+```
 
 Use 'docker run' to create and run a new container. If the image can't be found, it will automatically pull.
+```
+docker run <image_name>
+```
+Or, alternatively:
+```
+docker create <image_name> # (1)!
+docker start <container_name_or_container_id>
+```
+1. Outputs container id. Use this for the docker start command.
 
-`docker run <image_name>`
 
 To run it as a container in background (detached) mode:
 
-`docker run -d <image_name>`
+```
+docker run -d <image_name>
+```
 
 To run it with a custom name for the container:
+```
+docker run -d --name <container_name> <image_name>
+```
 
-`docker run -d --name <container_name> <image_name>`
+Container name needs to be unique. Rerunning the above command again would result in an error.
+
+To delete a container:
+```
+docker rm <container_name>
+```
 
 To run the container and map the host port with the container port:
+```
+docker run -d --name <container_name> -p <host_port>:<container_port> <image_name>
+```
 
-`docker run -d --name <container_name> -p <host_port>:<container_port> <image_name>`
+Some configurations like naming the container, mapping the port can be made only when creating a container and these configurations can't be edited or modified after the container is created. If you need to modify them, you need to delete and recreate the container.
 
+To stop the container:
+```
+docker stop <container_name_or_container_id>
+```
+
+To start the container:
+```
+docker start <container_name_or_container_id>
+```
 
 ### Docker Container Shell
 To get into the terminal of a running docker container:
@@ -120,7 +150,9 @@ CMD - Entry Point Command for container. Only 1 per container.
 
 ### Docker Build
 Build a docker image with the provided name and tag. 
-`docker build -t  [image-name]:[version] . `
+```
+docker build -t  [image-name]:[version] . 
+```
 
 The last argument in above command indicates the build context being passed for the docker build, which would be used by the COPY and other such commands. Using "." indicates to pass the current directory for the build context.
 
@@ -130,7 +162,9 @@ One option is to create a docker registry in AWS, by choosing ECR - Elastic Cont
 To push an image to a private repository,
 1. You need to login to the docker's private repository (once at the beginning of the session).
 2. Then use docker push. Example: 
-`docker push [docker-registry-domain/container-name:tag]`
+```
+docker push [docker-registry-domain/container-name:tag]
+```
 
 AWS CLI and credentials has to be configured.
 
