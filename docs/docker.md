@@ -4,10 +4,10 @@ hide:
 ---
 Docker is like a super organized backpack for computer programs. It packs everything a program needs to run smoothly, so it can easily move from one computer to another without causing any mess or trouble.
 
-## Install
+## :gear: Install
 Install Docker Desktop on [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows-install/), or [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-## Terminologies
+## :memo: Terminologies
 Basic terminologies in docker are:
 
 | Terminology    | Explanation                                                                                                       |
@@ -36,7 +36,7 @@ Few other terminologies:
 ## Docker Cheat Sheet
 https://docs.docker.com/get-started/docker_cheatsheet.pdf
 
-## Running Your First Docker Container
+## :running: Running Your First Docker Container
 You can search for images at [docker hub](https://hub.docker.com/). In the docker image page, you would have instructions on how to pull the image and use it. Example: https://hub.docker.com/_/mongo
 
 To pull (download) an image:
