@@ -23,6 +23,7 @@ Basic terminologies in docker are:
 
 
 Few other terminologies:
+
 | Terminology     | Explanation                                                                                           |
 | --------------- | ----------------------------------------------------------------------------------------------------- |
 | Docker Engine   | Core of Docker responsible for building, running, and managing Docker containers.                     |
@@ -40,18 +41,23 @@ https://docs.docker.com/get-started/docker_cheatsheet.pdf
 You can search for images at [docker hub](https://hub.docker.com/). In the docker image page, you would have instructions on how to pull the image and use it. Example: https://hub.docker.com/_/mongo
 
 To pull (download) an image:
+
 `docker pull <image_name>`
 
 Use 'docker run' to create and run a new container. If the image can't be found, it will automatically pull.
+
 `docker run <image_name>`
 
 To run it as a container in background (detached) mode:
+
 `docker run -d <image_name>`
 
 To run it with a custom name for the container:
+
 `docker run -d --name <container_name> <image_name>`
 
 To run the container and map the host port with the container port:
+
 `docker run -d --name <container_name> -p <host_port>:<container_port> <image_name>`
 
 
