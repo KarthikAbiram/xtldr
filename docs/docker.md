@@ -2,6 +2,7 @@
 hide:
   - navigation
 ---
+# Docker
 Docker is like a super organized backpack for computer programs. It packs everything a program needs to run smoothly, so it can easily move from one computer to another without causing any mess or trouble.
 
 ## :gear: Install
@@ -36,7 +37,7 @@ Few other terminologies:
 ## Docker Cheat Sheet
 https://docs.docker.com/get-started/docker_cheatsheet.pdf
 
-## :running: Running Your First Docker Container
+## :skis: Running Your First Docker Container
 You can search for images at [docker hub](https://hub.docker.com/). In the docker image page, you would have instructions on how to pull the image and use it. Example: https://hub.docker.com/_/mongo
 
 To pull (download) an image:
@@ -50,11 +51,9 @@ docker run <image_name>
 ```
 Or, alternatively:
 ```
-docker create <image_name> # (1)!
+docker create <image_name> # Outputs container id. Use this for the docker start command
 docker start <container_name_or_container_id>
 ```
-1. Outputs container id. Use this for the docker start command.
-
 
 To run it as a container in background (detached) mode:
 

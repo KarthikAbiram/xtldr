@@ -2,21 +2,9 @@
 hide:
   - toc
 ---
-# Welcome to MkDocs
+# What is xTLDR?
+# The absolute fastest way to get started with anything.
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+We want to get a beginner user to quickly get started with a new concept or tech stack. The TLDR version of X.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
+We may not cover all aspects and features in depth (there are official guides for that). Instead, we specifically target for an absolute beginner to understand the basic usage *fast*. We want to save users time on starting on something new by guiding them on the basic/common usage of a tech stack or concept.

@@ -3,8 +3,8 @@ theme:
   name: material
   features:
     - navigation.top
-    - content.code.copy
     - content.code.annotate
+    - content.code.copy
   language: en
   palette:
     - scheme: slate
@@ -25,6 +25,7 @@ extra_css:
 
 markdown_extensions:
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
