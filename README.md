@@ -21,3 +21,11 @@
 
 ## Other Commands
 - `mkdocs build` - Build the documentation site.
+
+# Mkdocs Useful Links
+- [Admonitions aka Collapsible Callouts](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)
+- [Setting up Social Cards](https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/)
+- [Sequence Diagrams and Co](https://squidfunk.github.io/mkdocs-material/reference/diagrams/)
+- [Content Tabs](https://squidfunk.github.io/mkdocs-material/reference/content-tabs/)
+- [Buttons](https://squidfunk.github.io/mkdocs-material/reference/buttons/)
+- [Grids](https://squidfunk.github.io/mkdocs-material/reference/grids/)
