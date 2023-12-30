@@ -1,6 +1,9 @@
 site_name: xTLDR
 theme:
   name: material
+  icon:
+    logo: simple/lightning
+  favicon: assets/favicon.png
   features:
     - navigation.top
     - content.code.annotate
