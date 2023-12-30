@@ -20,9 +20,15 @@ theme:
       primary: teal
       accent: purple
 
+plugins:
+  - search
+  - glightbox
+
 extra_css:
   - assets/toc_custom.css
   - assets/github-permalink-style.css
+  - assets/theme.css
+  - assets/search.css
 
 markdown_extensions:
   - attr_list
