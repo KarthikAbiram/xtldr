@@ -4,5 +4,5 @@ hide:
 ---
 
 # HTML
-List of Global HTML Attributes:
-[W3 Schools HTML Attributes](https://www.w3schools.com/tags/ref_standardattributes.asp)
+## List of HTML Attributes
+[HTML Attributes at W3 Schools](https://www.w3schools.com/tags/ref_standardattributes.asp)

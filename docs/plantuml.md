@@ -5,51 +5,49 @@ hide:
 
 # PlantUML
 ## Online PlantUML Generator:
-https://www.plantuml.com/plantuml/
+[Online PlantUML](https://www.plantuml.com/plantuml/)
 
 ## Sequence Diagram Syntax
-https://plantuml.com/sequence-diagram
-
-## PlantUML VS Code Extension
-Name: PlantUML
-Id: jebbs.plantuml
-Description: Rich PlantUML support for Visual Studio Code.
-Version: 2.17.2
-Publisher: jebbs
-VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml
+[Sequence Diagram Syntax](https://plantuml.com/sequence-diagram)
 
 ### Steps to Install 
-1. Install the VS Code Extension from https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml
-### Option 1: Docker Installation
-Run plantuml server using docker:
-```docker run -d -p 8800:8080 plantuml/plantuml-server:jetty```
+1. Install the [PlantUML VS Code Extension by Jebbs](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
 
-Configure plantuml server in VSCode Extension:
-- Click on the plantuml settings icon and then click on 'Extension Settings'.
-![PlantUML Settings Icon](https://i.imgur.com/9EJoMtv.png)
-- Scroll down to 'Plantuml: Render' and 'Plantuml: Server' and configure them as below.
-Plantuml: Render: PlantUML Server
-Plantuml: Server: http://localhost:8800![PlantUML Local Docker Server Configuration](https://i.imgur.com/8pYZI0T.png)
+=== "Option 1: Docker Installation"
+    Run plantuml server using docker:
+    ```
+    docker run -d -p 8800:8080 plantuml/plantuml-server:jetty
+    ```
+    
+    Configure plantuml server in VSCode Extension:  
 
-#### Option 2: Local Java Installation
-Or alternatively, if you wish, you can install PlantUML local server using Choco using below steps:
+    1. Click on the plantuml settings icon and then click on 'Extension Settings'.
+    2. Scroll down to 'Plantuml: Render' and 'Plantuml: Server' and configure them as below.
+    ```
+    Plantuml: Render: PlantUML Server
+    Plantuml: Server: http://localhost:8800
+    ```
+    ![PlantUML Settings Icon](images\plantuml_extension_settings.png){ : style="height:225px"} ![PlantUML Local Docker Server Configuration](images\plantuml_local_docker_configuration.png){ : style="width:600px"}
 
-For windows users,  [majkinetor](https://github.com/majkinetor "https://github.com/majkinetor")  introduced a way to install plantuml and its dependencies easily. Run  `cmd.exe`  as Administrator, and run two commands as follows (the first command is not needed and will fail if you already have chocolatey installed).
+=== "Option 2: Local Java Installation"
+    If you wish, you can install PlantUML local server using Choco using below steps:
+    For windows users,  [majkinetor](https://github.com/majkinetor "https://github.com/majkinetor")  introduced a way to install plantuml and its dependencies easily. Run  `cmd.exe`  as Administrator, and run two commands as follows (the first command is not needed and will fail if you already have chocolatey installed).
 
-```
-@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"  
-  
-choco install plantuml
+    ```
+    @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"  
+      
+    choco install plantuml
+    ```
 
-```
+    > If you've installed java, but still prompts "java not installed", please add java bin path to  `PATH`  environment variable.
 
-> If you've installed java, but still prompts "java not installed", please add java bin path to  `PATH`  environment variable.
 ### Usage
 Create a file in VS Code with *.plantuml extension and create a uml diagram as per its syntax.
-**Example**
+
+**Example:**  
 ```
 @startuml
 Bob -> Alice : hello
 @enduml
 ```
-Press **Alt + D** to preview the UML diagram.
+Press **Alt + D** to preview the UML diagram. Kindly make sure that the docker container in running (if went with "Option 1: Docker Installation")

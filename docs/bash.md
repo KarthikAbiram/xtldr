@@ -10,18 +10,18 @@ Use ↑ and ↓ arrows to naviage to the past bash commands
 ## Navigating Directories
 Creating, navigating and deleting directories.
 
-| Command                        | Description                                                               |
-| ------------------------------ | ------------------------------------------------------------------------- |
-| pwd                            | Print Working Directory (Current Directory)                               |
-| ls                             | List all files and folders in current directory                           |
-| cd MyFolder                    | Navigate to "MyFolder". <br> Tip: Use tab to autocomplete the folder name |
-| cd MyFolder1\SubFolder1        | Possible to navigate multiple levels                                      |
-| cd D:                          | Navigate to D drive                                                       |
-| cd ..                          | Move back one directory level                                             |
-| cd ~                           | Go to Home directory                                                      |
-| mkdir MyFolder                 | Makes/Creates a folder called "NewFolder"                                 |
-| mkdir -p MyFolder1/SubFolder1/ | Makes/creates the directories and subdirectories required                 |
-| rm -rf MyFolder                | Use -rf flag in rm command to delete folder recursively                   |
+| Command                        | Description                                                          |
+| ------------------------------ | -------------------------------------------------------------------- |
+| pwd                            | Print Working Directory (Current Directory)                          |
+| ls                             | List all files and folders in current directory                      |
+| cd MyFolder                    | Navigate to "MyFolder". Tip: Use tab to autocomplete the folder name |
+| cd MyFolder1\SubFolder1        | Possible to navigate multiple levels                                 |
+| cd D:                          | Navigate to D drive                                                  |
+| cd ..                          | Move back one directory level                                        |
+| cd ~                           | Go to Home directory                                                 |
+| mkdir MyFolder                 | Makes/Creates a folder called "NewFolder"                            |
+| mkdir -p MyFolder1/SubFolder1/ | Makes/creates the directories and subdirectories required            |
+| rm -rf MyFolder                | Use -rf flag in rm command to delete folder recursively              |
 
 ## Create and Delete Files
 Creating, viewing and deleting files.

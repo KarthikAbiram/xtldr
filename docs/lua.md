@@ -13,7 +13,7 @@ A built version of a Lua module is a rock. Luarocks are equivalent to EXE/Instal
 TBD
 
 ## Rockspec Format
-[https://github.com/luarocks/luarocks/wiki/Rockspec-format#builtin](https://github.com/luarocks/luarocks/wiki/Rockspec-format#builtin)
+[Rockspec Format](https://github.com/luarocks/luarocks/wiki/Rockspec-format#builtin)
 
 ## How to Build a Lua Package?
 [Instructions on how to create a lua rock](https://github.com/luarocks/luarocks/wiki/Creating-a-rock)
