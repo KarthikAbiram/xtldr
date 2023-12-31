@@ -22,23 +22,11 @@ Basic terminologies in docker are:
 | Docker Hub     | Cloud-based public registry service by Docker for sharing and managing Docker images.                             |
 | Docker Compose | Tool for defining and running multi-container Docker applications using a YAML configuration file.                |
 
-
-Few other terminologies:
-
-| Terminology     | Explanation                                                                                           |
-| --------------- | ----------------------------------------------------------------------------------------------------- |
-| Docker Engine   | Core of Docker responsible for building, running, and managing Docker containers.                     |
-| Docker Daemon   | Background process managing Docker containers and handling Docker API requests.                       |
-| Swarm           | Native clustering and orchestration for Docker, enabling the creation of a swarm of Docker nodes.     |
-| Service         | In Docker Swarm, a definition of tasks to execute on nodes, specifying image, ports, and replicas.    |
-| Stack           | Docker Compose file used in Docker Swarm mode, defining a multi-container application.                |
-| Overlay Network | Docker Swarm network spanning multiple nodes for communication between containers on different hosts. |
-
 ## Docker Cheat Sheet
-https://docs.docker.com/get-started/docker_cheatsheet.pdf
+[Docker Cheat Sheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
 
 ## :skis: Running Your First Docker Container
-You can search for images at [docker hub](https://hub.docker.com/). In the docker image page, you would have instructions on how to pull the image and use it. Example: https://hub.docker.com/_/mongo
+You can search for images at [docker hub](https://hub.docker.com/). In the docker image page, you would have instructions on how to pull the image and use it. Example: [https://hub.docker.com/_/mongo](https://hub.docker.com/_/mongo)
 
 To pull (download) an image:
 ```
@@ -129,15 +117,13 @@ Example:
 ```
 docker run -v /path/on/host:/path/in/container my_image
 ```
-
-#### Named Volume
 It is possible to provide a friendly name for the host volume, instead of providing an absolute path.
 ```
 docker run -v my_named_volume:/path/in/container my_image
 ```
+## Building Docker Image
 
-
-## DockerFile
+### DockerFile
 File name must be called 'DockerFile'. Some useful commands to use inside the dockerfile are:
 ```
 FROM - Source Image on top of which we are building our image
@@ -155,20 +141,31 @@ docker build -t  [image-name]:[version] .
 
 The last argument in above command indicates the build context being passed for the docker build, which would be used by the COPY and other such commands. Using "." indicates to pass the current directory for the build context.
 
-## Private Docker Registry
-One option is to create a docker registry in AWS, by choosing ECR - Elastic Container Registry. AWS ECR supports maintaining only 1 container image in ECR. There are other options like 'Digital Ocean', where they allow having multiple images pushed to a single docker registry.
+??? "Private Docker Registry"
+    One option is to create a docker registry in AWS, by choosing ECR - Elastic Container Registry. AWS ECR supports maintaining only 1 container image in ECR. There are other options like 'Digital Ocean', where they allow having multiple images pushed to a single docker registry.
 
-To push an image to a private repository,
-1. You need to login to the docker's private repository (once at the beginning of the session).
-2. Then use docker push. Example: 
-```
-docker push [docker-registry-domain/container-name:tag]
-```
+    To push an image to a private repository:
 
-AWS CLI and credentials has to be configured.
+    1. You need to login to the docker's private repository (once at the beginning of the session).
+    2. Then use docker push. Example: 
+    ```
+    docker push [docker-registry-domain/container-name:tag]
+    ```
+
+    AWS CLI and credentials has to be configured.
 
 ## Docker Tutorials 
-- Docker Tutorial for Beginners [Full Course in 3 Hours] by TechWorld with Nana: https://www.youtube.com/watch?v=3c-iBn73dDE
+[Docker Tutorial for Beginners by TechWorld with Nana](https://www.youtube.com/watch?v=3c-iBn73dDE)
 
-## Collection of Docker Compose Examples
-https://github.com/docker/awesome-compose
+## Docker Compose Examples
+[Docker Compose Examples](https://github.com/docker/awesome-compose)
+
+??? "Other Terminologies"
+    | Terminology     | Explanation                                                                                           |
+    | --------------- | ----------------------------------------------------------------------------------------------------- |
+    | Docker Engine   | Core of Docker responsible for building, running, and managing Docker containers.                     |
+    | Docker Daemon   | Background process managing Docker containers and handling Docker API requests.                       |
+    | Swarm           | Native clustering and orchestration for Docker, enabling the creation of a swarm of Docker nodes.     |
+    | Service         | In Docker Swarm, a definition of tasks to execute on nodes, specifying image, ports, and replicas.    |
+    | Stack           | Docker Compose file used in Docker Swarm mode, defining a multi-container application.                |
+    | Overlay Network | Docker Swarm network spanning multiple nodes for communication between containers on different hosts. |
