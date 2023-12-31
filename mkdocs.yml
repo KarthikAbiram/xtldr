@@ -1,5 +1,6 @@
 site_name: xTLDR
 site_url: https://xtldr.com/
+site_description: The absolute fastest way to get started with X.
 theme:
   name: material
   icon:
