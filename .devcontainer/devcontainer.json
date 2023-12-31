@@ -1,0 +1,35 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "xtldr-dev",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "squidfunk/mkdocs-material",
+	// "features": {
+	// 	"ghcr.io/devcontainers-contrib/features/mkdocs:2": {},
+	// 	"ghcr.io/devcontainers-contrib/features/pipenv:2": {}
+	// },
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Configure tool-specific properties.
+	// "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+	// "workspaceFolder": "workspace",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"mhutchie.git-graph",
+				"yzhang.markdown-all-in-one",
+				"zaaack.markdown-editor",
+				"esbenp.prettier-vscode",
+				"ms-python.vscode-pylance"
+			]
+		}
+	},
+		// // Use 'postCreateCommand' to run commands after the container is created.
+		// "postCreateCommand": "apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev && pip install mkdocs-material[imaging] && pip install mkdocs-glightbox",
+		"postCreateCommand": "pip install mkdocs-material[imaging] && pip install mkdocs-glightbox"
+		// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+		// "remoteUser": "root"
+	}
