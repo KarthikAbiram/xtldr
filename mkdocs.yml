@@ -1,4 +1,5 @@
 site_name: xTLDR
+site_url: https://xtldr.com/
 theme:
   name: material
   icon:
@@ -26,6 +27,7 @@ theme:
 plugins:
   - search
   - glightbox
+  - social
 
 extra_css:
   - assets/toc_custom.css
