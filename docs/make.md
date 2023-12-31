@@ -26,7 +26,7 @@ Even after installation is completed, make would not be detected in command prom
 2. This would open the `System Properties` dialog. Click on `Environment Variables...` option.
 3. Here you can either add the path to either `User` or `System` environment variables - use System if you would like to add this path for all users.
 4. Choose the `Path` variable and click `Edit`. Add the path using the `New` option as shown below.
-![windows system properties](images\windows_system_properties.png){ : style="height:300px"} ![environment variables](images\environment_variables.png){ : style="height:300px"} ![edit environment variables](images\edit_environment_variable_path.png){ : style="height:300px"}
+![windows system properties](\images\windows_system_properties.png){ : style="height:300px"} ![environment variables](\images\environment_variables.png){ : style="height:300px"} ![edit environment variables](\images\edit_environment_variable_path.png){ : style="height:300px"}
 1. Click OK to close all the dialogs.
 
 **Important thing to note:** You need to close and reopen any already open command terminals for make to be detected. You also need to close and reopen VS Code for the new path to be detected in the VS Code terminal.

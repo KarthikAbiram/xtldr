@@ -21,13 +21,14 @@ hide:
     
     Configure plantuml server in VSCode Extension:  
 
-    1. Click on the plantuml settings icon and then click on 'Extension Settings'.
+    1. Click on the plantuml settings icon and then click on 'Extension Settings'.  
+    ![PlantUML Settings Icon](\images\plantuml_extension_settings.png){ : style="height:250px"}
     2. Scroll down to 'Plantuml: Render' and 'Plantuml: Server' and configure them as below.
     ```
     Plantuml: Render: PlantUML Server
     Plantuml: Server: http://localhost:8800
     ```
-    ![PlantUML Settings Icon](images\plantuml_extension_settings.png){ : style="height:225px"} ![PlantUML Local Docker Server Configuration](images\plantuml_local_docker_configuration.png){ : style="width:600px"}
+    ![PlantUML Local Docker Server Configuration](\images\plantuml_local_docker_configuration.png){ : style="width:750px"}
 
 === "Option 2: Local Java Installation"
     If you wish, you can install PlantUML local server using Choco using below steps:
