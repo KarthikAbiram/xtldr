@@ -3,6 +3,12 @@ hide:
   - navigation
 ---
 # Database
+## Tutorials
+[SQL Tutorial by DoFactory](https://dofactory.com/sql)
+
+## References
+[SQL Reference by DoFactory](https://dofactory.com/sql/reference)
+
 ## DBDiagram
 [DBDiagram](https://dbdiagram.io/home) is a free, simple tool to draw Entity-Relationship diagrams by just writing code. 
 
