@@ -1,0 +1,6 @@
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color:        #000000;
+    --md-default-bg-color: #000000;
+    --md-default-bg-color--lighter: grey;
+    --md-default-bg-color-shade: rgb(36, 36, 36); /* Custom variable for search box background */
+}

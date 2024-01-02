@@ -1,0 +1,1579 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The absolute fastest way to get started with X.">
+      
+      
+      
+        <link rel="canonical" href="https://xtldr.com/javascript/">
+      
+      
+        <link rel="prev" href="../influxdb/">
+      
+      
+        <link rel="next" href="../jquery/">
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Javascript - xTLDR</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/toc_custom.css">
+    
+      <link rel="stylesheet" href="../assets/github-permalink-style.css">
+    
+      <link rel="stylesheet" href="../assets/theme.css">
+    
+      <link rel="stylesheet" href="../assets/search.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Javascript - xTLDR" >
+      
+        <meta  property="og:description"  content="The absolute fastest way to get started with X." >
+      
+        <meta  property="og:image"  content="https://xtldr.com/assets/images/social/javascript.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://xtldr.com/javascript/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Javascript - xTLDR" >
+      
+        <meta  name="twitter:description"  content="The absolute fastest way to get started with X." >
+      
+        <meta  name="twitter:image"  content="https://xtldr.com/assets/images/social/javascript.png" >
+      
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#javascript" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="xTLDR" class="md-header__button md-logo" aria-label="xTLDR" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0 1.75 6v12L12 24l10.25-6V6zm-1.775 18 1.08-4.657-2.428-2.397L13.79 6l-1.082 4.665 2.414 2.384z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            xTLDR
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Javascript
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="xTLDR" class="md-nav__button md-logo" aria-label="xTLDR" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0 1.75 6v12L12 24l10.25-6V6zm-1.775 18 1.08-4.657-2.428-2.397L13.79 6l-1.082 4.665 2.414 2.384z"/></svg>
+
+    </a>
+    xTLDR
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What is xTLDR?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../algorithms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algorithms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Azure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bash
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../csharp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSharp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DevOps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../games/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Games
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Github
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graphql/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GraphQL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../influxdb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    InfluxDB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Javascript
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Javascript
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#javascript-ebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      Javascript Ebook
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dom-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      DOM Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-listener" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Listener
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-and-removing-css-classes-from-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding and Removing CSS Classes from Javascript
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-text-of-html-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      Updating Text of HTML Element
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timeout-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timeout Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Map
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reduce" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reduce
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#find-and-findindex" class="md-nav__link">
+    <span class="md-ellipsis">
+      Find and FindIndex
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fat-arrow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fat Arrow (=&gt;)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jquery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    jQuery
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../make/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Make
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../markdown/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Markdown
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mkdocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MKDocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mongodb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MongoDB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../neo4j/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neo4j
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nodejs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NodeJS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../opa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OPA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plantuml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PlantUML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../powerpoint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PowerPoint
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../react/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    React
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../solid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SOLID
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../startup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Startup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system_design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vscode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VSCode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../web_tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wsl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WSL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_36" >
+        
+          
+          <label class="md-nav__link" for="__nav_36" id="__nav_36_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Books
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_36_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_36">
+            <span class="md-nav__icon md-icon"></span>
+            Books
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/clean_code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clean Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/impact_players/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Impact Players
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#javascript-ebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      Javascript Ebook
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dom-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      DOM Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-listener" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Listener
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-and-removing-css-classes-from-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding and Removing CSS Classes from Javascript
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-text-of-html-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      Updating Text of HTML Element
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timeout-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timeout Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Map
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reduce" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reduce
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#find-and-findindex" class="md-nav__link">
+    <span class="md-ellipsis">
+      Find and FindIndex
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fat-arrow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fat Arrow (=&gt;)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="javascript">Javascript<a class="headerlink" href="#javascript" title="Permanent link"></a></h1>
+<h2 id="javascript-ebook">Javascript Ebook<a class="headerlink" href="#javascript-ebook" title="Permanent link"></a></h2>
+<p><a href="https://javascript.info/js">Javascript Ebook</a> - A free ebook style guide for learning javascript.</p>
+<h2 id="dom-model">DOM Model<a class="headerlink" href="#dom-model" title="Permanent link"></a></h2>
+<p>The HTML structure gets converted to a DOM tree, which can then be accessed/set using javascript. </p>
+<p>Some of the most commonly used DOM functions are:
+<div class="highlight"><pre><span></span><code>document.querySelector(&quot;h1&quot;) //Query using Tag Selector. Returns only the 1st match and ignores the rest.
+document.querySelector(&quot;.title&quot;) //Query using ID Selector
+document.querySelector(&quot;#my-class&quot;) //Query using Class Selector
+
+document.querySelectorAll(&quot;h1&quot;) //Returns an array of all matched h1 elements
+
+document.querySelector(&quot;#my-class h1&quot;) //Nested search. Searches for a h1 tag which is present inside the class &quot;my-class&quot;
+</code></pre></div>
+PS: Above is the javascript way of querying. One of the most popular javascript libraries is jQuery, which is much more concise and easy to use.  To include jQuery, refer to <a href="https://releases.jquery.com/">jQuery releases</a> section. Include the jQuery javascript above your javascript include statement in HTML:
+<div class="highlight"><pre><span></span><code>&lt;script src=&quot;https://code.jquery.com/jquery-3.6.3.min.js&quot; integrity=&quot;sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+</code></pre></div></p>
+<h2 id="event-listener">Event Listener<a class="headerlink" href="#event-listener" title="Permanent link"></a></h2>
+<p>Add an event listener function to a HTML element and this would make the function to be executed when the event occurs.
+<div class="highlight"><pre><span></span><code>function myFunction(){
+    alert(&quot;Function triggered&quot;);
+}
+
+document.querySelector(&quot;h1&quot;).addEventListener(&quot;click&quot;,myFunction); //Adds the function &quot;myFunction&quot; as a listener to the 1st h1 element&#39;s click event
+</code></pre></div></p>
+<p>The above example can also be done using anonymous function as below:
+<div class="highlight"><pre><span></span><code>document.querySelector(&quot;h1&quot;).addEventListener(&quot;click&quot;,function (){
+    alert(&quot;Function triggered&quot;);
+}
+); 
+</code></pre></div>
+You can associate multiple HTML elements to a common function. To know which HTML element triggered the function, we can get to know using "this", as below.
+<div class="highlight"><pre><span></span><code>document.querySelector(&quot;h1&quot;).addEventListener(&quot;click&quot;,function (){
+    alert(this);
+    console.log(this.innerHTML);
+    this.style.color = &quot;red&quot;;
+}
+); 
+</code></pre></div>
+Although you can set an element's style property like color using "this.style.color", you may not always able to read the color property using this, unless the element style property is explicitly set. When the property is set using CSS styles, then you would not be able to read this value. For more details, please refer to <a href="https://stackoverflow.com/a/37501154">this stackover flow post</a>.</p>
+<p>To add events for keyboard actions, these events can be attached to the document directly. Adding an argument to the event listener would provide details on what caused the event.
+<div class="highlight"><pre><span></span><code>document.addEventListener(&quot;keydown&quot;, function(event){console.log(event.key)};
+</code></pre></div></p>
+<h2 id="adding-and-removing-css-classes-from-javascript">Adding and Removing CSS Classes from Javascript<a class="headerlink" href="#adding-and-removing-css-classes-from-javascript" title="Permanent link"></a></h2>
+<p>To dynamically add/remove a CSS class from a HTML object, use querySelector to select the object and then use add/remove functions as shown below:
+<div class="highlight"><pre><span></span><code>document.querySelector(&quot;#myId&quot;).classList.add(&quot;css-class-name&quot;);
+document.querySelector(&quot;#myId&quot;).classList.remove(&quot;css-class-name&quot;);
+</code></pre></div>
+Instead, using jQuery,  the same can be done using:
+<div class="highlight"><pre><span></span><code>$(&quot;#myId&quot;).addClass(&quot;css-class-name&quot;);
+$(&quot;#myId&quot;).removeClass(&quot;css-class-name&quot;);
+</code></pre></div>
+To check if a HTML element has a class:
+<div class="highlight"><pre><span></span><code>$(&quot;#myId&quot;).hasClass(&quot;css-class-name&quot;);
+</code></pre></div></p>
+<h2 id="updating-text-of-html-element">Updating Text of HTML Element<a class="headerlink" href="#updating-text-of-html-element" title="Permanent link"></a></h2>
+<p>Using jQuery, we can update text of a HTML element as shown below.
+<div class="highlight"><pre><span></span><code>$(&quot;#myheading&quot;).text(); //Returns the text
+$(&quot;#myheading&quot;).text(&quot;My New Heading&quot;); //Updates the text
+
+$(&quot;#myheading&quot;).html(); //Returns the inner HTML present which would include styles like &lt;b&gt;, &lt;i&gt;
+$(&quot;#myheading&quot;).html(&quot;&lt;b&gt;My New&lt;/b&gt; &lt;i&gt;Heading&lt;/i&gt;&quot;); //Updates the inner HTML with the styling provided
+</code></pre></div></p>
+<h2 id="timeout-function">Timeout Function<a class="headerlink" href="#timeout-function" title="Permanent link"></a></h2>
+<p>Here is the syntax for timeout function in javascript:
+<div class="highlight"><pre><span></span><code>setTimeout(&lt;function&gt;, timeout_value_ms);
+</code></pre></div>
+Using anonymous function:
+<div class="highlight"><pre><span></span><code>setTimeout(function(){
+document.querySelector(&quot;#myId&quot;).classList.add(&quot;css-class-name&quot;);
+}, 100);
+</code></pre></div></p>
+<h2 id="constructor-function">Constructor Function<a class="headerlink" href="#constructor-function" title="Permanent link"></a></h2>
+<p>A constructor function in javascript is equivalent to a class in other programming languages. A constructor function would be similar to a normal function with the difference of constructor function names would be in Pascal case ("MyStudent" instead of "myStudent")
+<div class="highlight"><pre><span></span><code>function MyStudent(name, age, marks){
+    //Properties
+    this.name = name,
+    this.age = age,
+    this.marks = marks,
+
+    //Methods
+    this.calculateTotal = function (){
+        var total = 0;
+        for (var i=0;i&lt;this.marks.length;i++){
+            total += this.marks[i];
+        }
+        return total;
+    }
+}
+
+s1 = new MyStudent(&quot;John&quot;, 14, [85,90,92]);
+console.log(s1.calculateTotal());
+</code></pre></div></p>
+<h2 id="map">Map<a class="headerlink" href="#map" title="Permanent link"></a></h2>
+<p>Map function is used to traverse an array and apply a custom function over each element of the array. The output of Map function would also be an array of the same size as the input array.
+<div class="highlight"><pre><span></span><code>var myArray = [2,3,6,7,9,10]
+
+function double(x){
+return 2 * x;
+}
+
+myNewArray = myArray.map(double);
+console.log(myNewArray);
+</code></pre></div>
+Alternatively, using anonymous function:
+<div class="highlight"><pre><span></span><code>var myArray = [2,3,6,7,9,10]
+
+myNewArray = myArray.map(function (x){
+return 2 * x;
+});
+console.log(myNewArray);
+</code></pre></div></p>
+<h2 id="filter">Filter<a class="headerlink" href="#filter" title="Permanent link"></a></h2>
+<p>Filter function is used to traverse an array using a custom function which checks for a boolean condition and returns a subset of the array, when the condition is true.
+<div class="highlight"><pre><span></span><code>var myArray = [2,3,6,7,9,10]
+
+myNewArray = myArray.filter(function (x){
+return x &gt; 6;
+});
+console.log(myNewArray);
+</code></pre></div></p>
+<h2 id="reduce">Reduce<a class="headerlink" href="#reduce" title="Permanent link"></a></h2>
+<p>Reduce function is used to traverse an array using a custom function and reduce the entire array to a single element.
+<div class="highlight"><pre><span></span><code>var myArray = [2,3,6,7,9,10]
+
+myNewArray = myArray.reduce(function (aggregator, x){
+return aggregator + x;
+});
+console.log(myNewArray);
+</code></pre></div></p>
+<h2 id="find-and-findindex">Find and FindIndex<a class="headerlink" href="#find-and-findindex" title="Permanent link"></a></h2>
+<p>Find the first element that matches the given condition. Use FindIndex to get the index of the first matched element.</p>
+<p>Added in ES6.
+<div class="highlight"><pre><span></span><code>var myArray = [2,3,6,7,9,10]
+
+Num = myArray.find(function (x){
+return x&gt;6;
+});
+console.log(Num);
+
+NumIndex = myArray.findIndex(function (x){
+return x&gt;6;
+});
+console.log(NumIndex);
+</code></pre></div></p>
+<h2 id="fat-arrow">Fat Arrow (=&gt;)<a class="headerlink" href="#fat-arrow" title="Permanent link"></a></h2>
+<div class="highlight"><pre><span></span><code>var myArray = [2,3,6,7,9,10]
+
+myNewArray = myArray.map(function (x){
+return 2 * x;
+});
+
+//Above anonymous function can still be reduced using fat arrow function as below.
+myNewArray = myArray.map(x =&gt; 2 * x);
+console.log(myNewArray);
+</code></pre></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
