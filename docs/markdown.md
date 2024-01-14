@@ -7,7 +7,7 @@ hide:
 
 ## Headings
 Use `#` for headings. Use a space between the # and the heading text.
-```
+```md
 # Heading 1
 ## Heading 1.1
 ### Heading 1.1.1
@@ -18,21 +18,21 @@ Use an empty line to separate paragraphs.
 
 ## Links
 Have the text within square braces [ ], followed by the URL in round braces ( ).
-```
+```md
 I love [xTLDR](https://xtldr.com) for its brevity.
 ```
 I love [xTLDR](https://xtldr.com) for its brevity.
 
 ## Images
 Images are similar to links. Have an exclamatory mark, followed by alternate text for the image within square braces [ ], followed by absolute or relative URL of the image in round braces.
-```
+```md
 Logo of Wikipedia is ![Wikipedia Logo](https://en.wikipedia.org/static/images/icons/wikipedia.png)
 ```
 
 ## Lists
 ### Ordered lists
 Use numbering for ordered lists.
-```
+```md
 1. Item 1
   1.1 Sub Item
 2. Item 2
@@ -41,7 +41,7 @@ Use numbering for ordered lists.
 
 ### Unordered Lists
 Use `-` or `+` or `*` for unordered lists.
-```
+```md
 - Item 1
   - Sub Item
 - Item 2
@@ -57,14 +57,14 @@ Enclose them with a single backtick (`) for single line content, which would sho
 
 Enclose them with triple backticks (```) for multi line content
 
-```
+```py
 def function():
     print("Hello World!")
 ```
 
 ## Tables
 Syntax for table is
-```
+```md
 | Column 1   | Column 2 | Column 3 |
 | ---------- | -------- | -------- |
 | Row 1 Text | Text     | Random   |

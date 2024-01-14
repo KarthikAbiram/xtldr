@@ -15,7 +15,7 @@ Install npm-check-updates globally using the command:
 `npm install -g npm-check-updates`
 
 Then use below commands to upgrade and install the dependencies:
-```
+```bash
 ncu -u
 npm install
 npm start
@@ -25,7 +25,7 @@ npm start
 1. [Airbnb React Style Guide](https://github.com/airbnb/javascript/tree/master/react)
 ## Simple React App Example
 Here is a very simple example for React application, to be written in index.js:
-```
+``` react
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -42,7 +42,7 @@ ReactDOM.render(
 Note: You can include javascript expressions (not javascript statement/code) within the HTML code within { }. 
 
 Now, include the index.js in index.html like you normally would, with a minor change of specifying type as 'JSX' instead of 'Javascript' as shown below.
-```
+```react
 <script  src="index.js" type="text/JSX"></script>
 ```
 When applying attributes to HTML elements in JSX, you need to use camel case equivalent. Eg: `contentEditable` instead of `contenteditable`.
@@ -54,7 +54,7 @@ Babel is a toolchain that is mainly used to convert latest version of javascript
 
 ## CSS Inline Style
 For CSS inline style, they need to use javascript objects with key-value pairs. The values need to be strings.
-```
+```react
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -80,7 +80,7 @@ Create a separate jsx file for each React component, which can then be imported 
 
 Example: 
 Heading.jsx, parallel to index.js contains:
-```
+```react
 import React from "react";
 
 function Heading() {
@@ -90,7 +90,7 @@ function Heading() {
 export default Heading;
 ```
 index.js imports and uses `Heading.jsx` present parallel to index.js:
-```
+```react
 import React from "react";
 import ReactDOM from "react-dom";
 import Heading from "./Heading"
@@ -111,7 +111,7 @@ ReactDOM.render(
 There can be only one default export from a jsx file. To export multiple items:
 
 `Pi.jsx` file contents:
-```
+```react
 const pi = 3.14;
 
 function DoublePi() {
@@ -126,7 +126,7 @@ export default pi;
 export { DoublePi, TriplePi };
 ```
 To import in index.jsx:
-```
+```react
 import React from "react";
 import ReactDOM from "react-dom";
 import * as pi from "./Pi"
@@ -134,7 +134,7 @@ import * as pi from "./Pi"
 console.log("Various imported items from pi are", pi.default, pi.DoublePi(), pi.TriplePi())
 ```
 Or alternatively:
-```
+```react
 import React from "react";
 import ReactDOM from "react-dom";
 import pi, {DoublePi, TriplePi} from "./Pi"

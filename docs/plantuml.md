@@ -15,7 +15,7 @@ hide:
 
 === "Option 1: Docker Installation"
     Run plantuml server using docker:
-    ```
+    ```bash
     docker run -d -p 8800:8080 plantuml/plantuml-server:jetty
     ```
     

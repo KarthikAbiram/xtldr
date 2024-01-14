@@ -15,7 +15,7 @@ OPA stands for Open Policy Agent. It is an open source framework which services 
 Create below files in a base directory.
 
 ### policy.rego
-```
+```go
 package test
 
 import future.keywords.if
@@ -43,7 +43,7 @@ This is a test input file to use for testing using "opa eval".
 
 ### OPA Eval Command for Testing
 Run below command from command prompt from the base folder which contains the opa.exe, policy.rego and test_input.json.
-```
+```bash
 opa.exe eval --data policy.rego --input test_input.json --format raw "data.test"
 ```
 This would evaluate and return the output of all the variables/rules in the policy.rego file.

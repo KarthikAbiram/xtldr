@@ -11,7 +11,7 @@ Setting up "make" in Windows involves two steps:
 
 ## Install Make
 Make can be installed using winget, an in-built Windows package manager.
-```
+```bash
 winget install -e --id GnuWin32.Make
 ```
 This will download and launch the GnuWin32 Make installer. Once installed GnuWin32 would be installed and available at below location:
@@ -33,7 +33,7 @@ Even after installation is completed, make would not be detected in command prom
 
 ## Verify Make Installation
 Open a new command prompt or bash shell and provide below command to check if make is detected:
-```
+```bash
 make --version
 ```
 This is expected to give a response as below:

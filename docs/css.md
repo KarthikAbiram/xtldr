@@ -66,7 +66,7 @@ When visibility:hidden is used, the element is removed but the space it was occu
 
 	For example, to add a space of 200 px to the top of the element whose id is element-id:
 
-	```
+	```css
 	#element-id {
 	position: relative;
 	top: 200px;
@@ -89,15 +89,19 @@ When visibility:hidden is used, the element is removed but the space it was occu
 
 ### Centering a div
 One way is to, make text-align property of parent element to be center, to make all child elements to be center.
-`body {
+```css
+body {
   text-align:center;
-}`
+}
+```
 
 This would not work with those child elements, which has width property. When an element has width, you can use margin to auto to center the element as below.
-`container {
+```css
+container {
   width: 600px;
   height: 300px;
-}`
+}
+```
 
 ## Sizing
 | Unit | Description                                                                                                                        |

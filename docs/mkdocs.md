@@ -5,10 +5,10 @@ hide:
 # MKDocs
 [Material for MKDocs](https://github.com/squidfunk/mkdocs-material) is an open source project where you can write your documentation using markdown, host it in git and generate a static site for you, [like this site](https://xtldr.com/).
 
-# Docker Dev Container
+## Docker Dev Container
 In your repository root directory, create a folder called ".devcontainer" and create a "devcontainer.json" with below file contents.  
 
-```
+```docker
 {
 	"name": "mkdocs",
 	"image": "squidfunk/mkdocs-material",

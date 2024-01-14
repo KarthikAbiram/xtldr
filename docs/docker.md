@@ -29,64 +29,64 @@ Basic terminologies in docker are:
 You can search for images at [docker hub](https://hub.docker.com/). In the docker image page, you would have instructions on how to pull the image and use it. Example: [https://hub.docker.com/_/mongo](https://hub.docker.com/_/mongo)
 
 To pull (download) an image:
-```
+```bash
 docker pull <image_name>
 ```
 
 Use 'docker run' to create and run a new container. If the image can't be found, it will automatically pull.
-```
+```bash
 docker run <image_name>
 ```
 Or, alternatively:
-```
+```bash
 docker create <image_name> # Outputs container id. Use this for the docker start command
 docker start <container_name_or_container_id>
 ```
 
 To run it as a container in background (detached) mode:
 
-```
+```bash
 docker run -d <image_name>
 ```
 
 To run it with a custom name for the container:
-```
+```bash
 docker run -d --name <container_name> <image_name>
 ```
 
 Container name needs to be unique. Rerunning the above command again would result in an error.
 
 To delete a container:
-```
+```bash
 docker rm <container_name>
 ```
 
 To run the container and map the host port with the container port:
-```
+```bash
 docker run -d --name <container_name> -p <host_port>:<container_port> <image_name>
 ```
 
 Some configurations like naming the container, mapping the port can be made only when creating a container and these configurations can't be edited or modified after the container is created. If you need to modify them, you need to delete and recreate the container.
 
 To stop the container:
-```
+```bash
 docker stop <container_name_or_container_id>
 ```
 
 To start the container:
-```
+```bash
 docker start <container_name_or_container_id>
 ```
 
 ### Docker Container Shell
 To get into the terminal of a running docker container:
-```
+```bash
 docker exec -it container-name sh
 ```
 If 'sh' didn't work, you can try 'bash' (one of these two are typically expected within a container).
 
 Once inside the terminal of the docker container, you can run commands within the container. Few useful commands to use here are:
-```
+```bash
 # List Directory
 ls
 
@@ -100,7 +100,7 @@ cd ..
 env
 ```
 ### Logs
-```
+```bash
 # Get logs from container
 docker container-name logs
 
@@ -114,18 +114,18 @@ docker container-name logs -f
 The file system in containers are would be lost when the containers are restarted. To avoid this and have data persistence, we do a mapping of host volume to the container volume.
 
 Example:
-```
+```bash
 docker run -v /path/on/host:/path/in/container my_image
 ```
 It is possible to provide a friendly name for the host volume, instead of providing an absolute path.
-```
+```bash
 docker run -v my_named_volume:/path/in/container my_image
 ```
 ## Building Docker Image
 
 ### DockerFile
 File name must be called 'DockerFile'. Some useful commands to use inside the dockerfile are:
-```
+```docker
 FROM - Source Image on top of which we are building our image
 ENV - Set an environment variable (instead of this, preferable to use env  externally using docker compose)
 RUN - Run a command inside the container. Can use multiple RUN commands in a docker file.
@@ -135,7 +135,7 @@ CMD - Entry Point Command for container. Only 1 per container.
 
 ### Docker Build
 Build a docker image with the provided name and tag. 
-```
+```bash
 docker build -t  [image-name]:[version] . 
 ```
 

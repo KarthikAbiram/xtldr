@@ -12,6 +12,7 @@ It is like a time machine for your computer files. It keeps track of every chang
 For installing and setup, please refer to [xTLDR Git Setup](\git\setup)
 
 ## 🖥️ Git Commands
+
 ### Repository Commands
 
 | Command         | Description                                          |
@@ -27,6 +28,8 @@ For installing and setup, please refer to [xTLDR Git Setup](\git\setup)
 | git add [file]                 | Adds a file to staging from where you can commit                           |
 | git add .                      | Add all modified files to staging                                          |
 | git reset [file]               | Unstage a file from staging. Changes will be retained in working directory |
+| git restore .                  | Discard changes in modified files (excludes those in staging)              |
+| git clean -f                   | Removes untracked files from repository. Use -df to remove folders         |
 | git commit -m "commit message" | Makes a commit from the changes in staging                                 |
 
 ### Branching and Merging                                                                 
@@ -38,12 +41,12 @@ For installing and setup, please refer to [xTLDR Git Setup](\git\setup)
 | git merge [branch-name]    | Merges the provided branch history into the active branch |
 
 If you are in a conflicted state and want to go with "their" version for all files:
-```
+```bash
 git checkout --theirs .
 git add .
 ```
 If you are in a conflicted state and want to go with "your" version for all files:
-```
+```bash
 git checkout --ours .
 git add .
 ```
