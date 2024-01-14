@@ -8,6 +8,7 @@ theme:
   favicon: assets/favicon.png
   features:
     - navigation.top
+    - navigation.indexes
     - content.code.annotate
     - content.code.copy
   language: en
@@ -27,6 +28,7 @@ theme:
 
 plugins:
   - search
+  - awesome-pages
   - glightbox
   - social:
       cards_layout_options:

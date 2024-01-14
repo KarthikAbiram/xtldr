@@ -29,7 +29,7 @@
 	},
 		// // Use 'postCreateCommand' to run commands after the container is created.
 		// "postCreateCommand": "apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev && pip install mkdocs-material[imaging] && pip install mkdocs-glightbox",
-		"postCreateCommand": "pip install mkdocs-material[imaging] && pip install mkdocs-glightbox"
+		"postCreateCommand": "pip install mkdocs-material[imaging] && pip install mkdocs-glightbox && pip install mkdocs-awesome-pages-plugin"
 		// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 		// "remoteUser": "root"
 	}
