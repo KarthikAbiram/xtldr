@@ -50,6 +50,13 @@ If you are using Python FastAPI, you can go with pymongo as there are already mo
 2. [https://github.com/mdomke/pytest-mongodb](https://github.com/mdomke/pytest-mongodb)
 3. [https://github.com/mongomock/mongomock](https://github.com/mongomock/mongomock)
 
+## Concepts
+### Replication
+Replication means you have several nodes. You have one PRIMARY and one or several SECONDARY. As term "repliaction" implies the SECONDARY have an exact copy of the PRIMARY. An application can write only to the PRIMARY, however it can read either from PRIMARY or SECONDARY.
+
+### Sharding
+Sharding means you distribute the data over several nodes. In your case you put even ID's to one node and odd ID's to the other node. This is very similar to MongoDB sharding, however typically you just define the sharding key and MongoDB takes care how to distribute the data evenly.
+
 ### References
 1. [https://stackoverflow.com/questions/42239241/how-to-mock-mongodb-for-python-unittests](https://stackoverflow.com/questions/42239241/how-to-mock-mongodb-for-python-unittests)
 2. [https://stackoverflow.com/questions/66223290/mocking-database-calls-in-python-using-pytest-mock](https://stackoverflow.com/questions/66223290/mocking-database-calls-in-python-using-pytest-mock)
