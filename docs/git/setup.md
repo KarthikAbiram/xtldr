@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# Setup
+# Git Setup
 
 ## 🛠️ Install Git in Your PC
 [Download](https://git-scm.com/downloads) and install git

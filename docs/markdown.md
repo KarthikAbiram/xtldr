@@ -70,3 +70,12 @@ Syntax for table is
 | Row 1 Text | Text     | Random   |
 | Row 2 Text | Text     | Random   |
 ```
+
+## Editors
+As markdown is text file, it can be created and edited with any text editor. There are tools that provide preview and higher support (like automatic formatting of a table)
+
+### VS Code
+VS Code has basic markdown support built-in, apart from wide variety of mark down extensions like [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one).
+
+### Obsidian
+[Obsidian](https://obsidian.md/) is an offline application that supports markdown. It is free for personal use and has a [paid plan](https://obsidian.md/pricing) for commercial use.

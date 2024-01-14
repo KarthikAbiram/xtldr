@@ -4,7 +4,7 @@ hide:
 ---
 # Clean Code
 
-My personal notes and key takeaways from the book 'Clean Code' by Robert C Martin.
+My personal notes and key takeaways from the book 'Clean Code' by Robert C Martin. You can [buy the book at Amazon](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882).
 
 !!! note "Measurement of Code Quality"
     The only valid measurement of code quality: WTFs/minute - [Thomas Holwerdia](https://www.osnews.com/story/19266/)

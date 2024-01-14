@@ -38,5 +38,6 @@ To Build:
 - [Content Tabs](https://squidfunk.github.io/mkdocs-material/reference/content-tabs/)
 - [Buttons](https://squidfunk.github.io/mkdocs-material/reference/buttons/)
 - [Grids](https://squidfunk.github.io/mkdocs-material/reference/grids/)
+- [Footer Text link](https://github.com/squidfunk/mkdocs-material/issues/5134#issuecomment-1453316243)
 
   

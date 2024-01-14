@@ -1,6 +1,7 @@
 ---
 hide:
   - toc
+  - footer
 ---
 # What is xTLDR?
 # The absolute fastest way to get started with anything.
