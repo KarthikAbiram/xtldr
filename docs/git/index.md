@@ -13,6 +13,11 @@ For installing and setup, please refer to [xTLDR Git Setup](\git\setup)
 
 ## 🖥️ Git Commands
 
+| Command            | Description                                      |
+| ------------------ | ------------------------------------------------ |
+| git --version      | Get version of git installed in the system       |
+| git help [command] | Get help for the git command. Eg: git help clone |
+
 ### Repository Commands
 
 | Command         | Description                                          |
