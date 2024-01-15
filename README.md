@@ -39,5 +39,6 @@ To Build:
 - [Buttons](https://squidfunk.github.io/mkdocs-material/reference/buttons/)
 - [Grids](https://squidfunk.github.io/mkdocs-material/reference/grids/)
 - [Footer Text link](https://github.com/squidfunk/mkdocs-material/issues/5134#issuecomment-1453316243)
+- [Estimated Time to Read Plugin](https://github.com/ntt4/mkdocs-timetoread-plugin/tree/main)
 
   
