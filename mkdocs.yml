@@ -34,6 +34,17 @@ plugins:
   - social:
       cards_layout_options:
         background_color: black
+  - git-committers:
+      repository: KarthikAbiram/xtldr
+      branch: main
+      exclude:
+        - index.md
+        - books/index.md
+  - git-revision-date-localized:
+      enable_creation_date: true
+      exclude:
+        - index.md
+        - books/index.md
 
 extra_css:
   - assets/toc_custom.css
@@ -64,3 +75,20 @@ markdown_extensions:
 
 extra:
   generator: true # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#generator-notice
+  analytics:
+    provider: google
+    property: G-EF6S4TB0C5
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnFR62swIf4p_vJ9y8vGQgTKho5QGHmpr9zAvr3JzlSniRnw/viewform?usp=pp_url&entry.31431447={url}" target="_blank" rel="noopener">feedback form</a>.

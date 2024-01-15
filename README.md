@@ -40,5 +40,6 @@ To Build:
 - [Grids](https://squidfunk.github.io/mkdocs-material/reference/grids/)
 - [Footer Text link](https://github.com/squidfunk/mkdocs-material/issues/5134#issuecomment-1453316243)
 - [Estimated Time to Read Plugin](https://github.com/ntt4/mkdocs-timetoread-plugin/tree/main)
+- [Adding a Comment System](https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/)
 
   
