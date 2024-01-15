@@ -1,6 +1,8 @@
 ---
 hide:
   - navigation
+search:
+  boost: 0.5
 ---
 Github is one of the most popular git repositories for source code control (version tracking of code)
 
