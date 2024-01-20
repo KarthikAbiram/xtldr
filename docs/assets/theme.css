@@ -4,3 +4,10 @@
     --md-default-bg-color--lighter: grey;
     --md-default-bg-color-shade: rgb(36, 36, 36); /* Custom variable for search box background */
 }
+
+
+/* Increase font size for admonition: https://github.com/squidfunk/mkdocs-material/discussions/2260#discussioncomment-324706 */
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 0.72rem
+}

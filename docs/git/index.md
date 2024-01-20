@@ -21,12 +21,12 @@ For installing and setup, please refer to [xTLDR Git Setup](\git\setup)
 
 ### ➡️ Repository Commands
 
-| Command         | Description                                          |
-| --------------- | ---------------------------------------------------- |
-| git init        | Initialize an existing directory as a repository     |
-| git clone [url] | Clone a remote repository to a local system          |
-| git pull        | Fetches changes from remote and merges remote branch |
-| git push        | Push local changes to remote                         |
+| Command         | Description                                         |
+| --------------- | --------------------------------------------------- |
+| git init        | Initialize an existing directory as a repository    |
+| git clone [url] | Clone a remote repository to a local system         |
+| git pull        | Fetches changes from remote and merges local branch |
+| git push        | Push local changes to remote                        |
 
 ### ➡️ Make Changes and Commit                                                                      
 | Command                        | Description                                                                                   |
@@ -40,12 +40,12 @@ For installing and setup, please refer to [xTLDR Git Setup](\git\setup)
 | git commit -m "commit message" | Makes a commit from the changes in staging                                                    |
 
 ### ➡️ Branching and Merging                                                                 
-| Command                    | Description                                                        |
-| -------------------------- | ------------------------------------------------------------------ |
-| git branch                 | List all branches. * denotes the active branch                     |
-| git branch [branch-name]   | Create a branch with the provided name                             |
-| git checkout [branch-name] | Switch to a different branch. Use -b to create and checkout branch |
-| git merge [branch-name]    | Merges the provided branch history into the active branch          |
+| Command                    | Description                                                                                                        |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| git branch                 | List all branches. * denotes the active branch                                                                     |
+| git branch [branch-name]   | Create a branch with the provided name                                                                             |
+| git checkout [branch-name] | Switch to a different branch. Use -b to create and checkout branch                                                 |
+| git merge [branch-name]    | Merges provided branch into active branch. Do `git pull` before merge to get the changes committed by other users. |
 
 ### ➡️ Status
 | Command                                         | Description                                          |
