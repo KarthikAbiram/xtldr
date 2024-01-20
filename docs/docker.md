@@ -2,6 +2,7 @@
 hide:
   - navigation
 comments: true
+description: A beginner friendly guide to get started with docker. Includes running your first docker container, essential commands and cheat sheets.
 ---
 # Docker
 Docker is like a super organized backpack for computer programs. It packs everything a program needs to run smoothly, so it can easily move from one computer to another without causing any mess or trouble.
