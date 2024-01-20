@@ -14,3 +14,4 @@ Few popular options are:
 ## Alternatives
 1. [Material for MKDocs vs Other Tools](https://squidfunk.github.io/mkdocs-material/alternatives/)
 2. [Docusaurus vs Other Tools](https://docusaurus.io/docs#comparison-with-other-tools)
+3. [Huge List of Static Site Generators](https://github.com/myles/awesome-static-generators)
