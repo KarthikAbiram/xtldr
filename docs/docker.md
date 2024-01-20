@@ -1,14 +1,15 @@
 ---
 hide:
   - navigation
+comments: true
 ---
 # Docker
 Docker is like a super organized backpack for computer programs. It packs everything a program needs to run smoothly, so it can easily move from one computer to another without causing any mess or trouble.
 
-## :gear: Install
+## 🛠️ Install
 Install Docker Desktop on [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows-install/), or [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-## :memo: Terminologies
+## 📚 Terminologies
 Basic terminologies in docker are:
 
 | Terminology    | Explanation                                                                                                       |
@@ -22,10 +23,10 @@ Basic terminologies in docker are:
 | Docker Hub     | Cloud-based public registry service by Docker for sharing and managing Docker images.                             |
 | Docker Compose | Tool for defining and running multi-container Docker applications using a YAML configuration file.                |
 
-## Docker Cheat Sheet
+## 📑 Docker Cheat Sheet
 [Docker Cheat Sheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
 
-## :skis: Running Your First Docker Container
+## 🐋 Running Your First Docker Container
 You can search for images at [docker hub](https://hub.docker.com/). In the docker image page, you would have instructions on how to pull the image and use it. Example: [https://hub.docker.com/_/mongo](https://hub.docker.com/_/mongo)
 
 To pull (download) an image:
@@ -78,7 +79,7 @@ To start the container:
 docker start <container_name_or_container_id>
 ```
 
-### Docker Container Shell
+### 🖥️ Docker Container Shell
 To get into the terminal of a running docker container:
 ```bash
 docker exec -it container-name sh
@@ -99,7 +100,7 @@ cd ..
 # List the environment variables within the container
 env
 ```
-### Logs
+### 📜 Logs
 ```bash
 # Get logs from container
 docker container-name logs
@@ -110,7 +111,7 @@ docker container-name logs | tail
 # Stream the logs
 docker container-name logs -f
 ```
-### Docker Volume
+### 🗄️ Docker Volume
 The file system in containers are would be lost when the containers are restarted. To avoid this and have data persistence, we do a mapping of host volume to the container volume.
 
 Example:
@@ -121,9 +122,9 @@ It is possible to provide a friendly name for the host volume, instead of provid
 ```bash
 docker run -v my_named_volume:/path/in/container my_image
 ```
-## Building Docker Image
+## 🧊 Building Docker Image
 
-### DockerFile
+### 📄 DockerFile
 File name must be called 'DockerFile'. Some useful commands to use inside the dockerfile are:
 ```docker
 FROM - Source Image on top of which we are building our image
@@ -133,7 +134,7 @@ COPY - Copy from host to container
 CMD - Entry Point Command for container. Only 1 per container.
 ```
 
-### Docker Build
+### 🏗️ Docker Build
 Build a docker image with the provided name and tag. 
 ```bash
 docker build -t  [image-name]:[version] . 
@@ -154,10 +155,10 @@ The last argument in above command indicates the build context being passed for 
 
     AWS CLI and credentials has to be configured.
 
-## Docker Tutorials 
+## 🎬 Docker Tutorials 
 [Docker Tutorial for Beginners by TechWorld with Nana](https://www.youtube.com/watch?v=3c-iBn73dDE)
 
-## Docker Compose Examples
+## 🐳 Docker Compose Examples
 [Docker Compose Examples](https://github.com/docker/awesome-compose)
 
 ??? "Other Terminologies"
