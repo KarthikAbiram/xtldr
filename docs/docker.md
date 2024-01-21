@@ -5,7 +5,15 @@ comments: true
 description: A beginner friendly guide to get started with docker. Includes running your first docker container, essential commands and cheat sheets.
 ---
 # Docker
-Docker is like a super organized backpack for computer programs. It packs everything a program needs to run smoothly, so it can easily move from one computer to another without causing any mess or trouble.
+Docker is a containerization technology which helps to package the application along with all its dependencies and run times, so that there are no dependencies/expectations on the end user system. It is similar to a virtual machine but a lot lighter.
+
+A one image explanation of docker:
+
+![but, it works on my machine!](\images\docker-but-it-works-on-my-machine.jpg){ : style="height:300px"}
+
+*Programmer:  ...but, it works on my machine!<br/>
+Manager: Do we then ship your computer!?<br/>
+Docker: Why not? 😁*
 
 ## 🛠️ Install
 Install Docker Desktop on [Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows-install/), or [Linux](https://docs.docker.com/desktop/install/linux-install/).
