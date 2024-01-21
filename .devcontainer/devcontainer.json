@@ -28,7 +28,8 @@
 		}
 	},
 	"containerEnv": {
-		"ENABLED_GIT_REVISION_DATE": "False"
+		"ENABLED_GIT_REVISION_DATE": "False",
+		"ENABLED_GIT_COMMITTERS": "False"
 	},
 		// // Use 'postCreateCommand' to run commands after the container is created.
 		"postCreateCommand": "pip install mkdocs-material[imaging] && pip install mkdocs-glightbox && pip install mkdocs-awesome-pages-plugin && pip install mkdocs-git-committers-plugin-2 && pip install mkdocs-git-revision-date-localized-plugin"

@@ -36,12 +36,14 @@ plugins:
       cards_layout_options:
         background_color: black
   - git-committers:
+      enabled: !ENV [ENABLED_GIT_COMMITTERS, True]
       repository: KarthikAbiram/xtldr
       branch: main
       exclude:
         - index.md
         - books/index.md
   - git-revision-date-localized:
+      enabled: !ENV [ENABLED_GIT_REVISION_DATE, True]
       enable_creation_date: true
       exclude:
         - index.md
