@@ -46,6 +46,7 @@ For installing and setup, please refer to [xTLDR Git Setup](\git\setup)
 | git branch [branch-name]   | Create a branch with the provided name                                                                             |
 | git checkout [branch-name] | Switch to a different branch. Use -b to create and checkout branch                                                 |
 | git merge [branch-name]    | Merges provided branch into active branch. Do `git pull` before merge to get the changes committed by other users. |
+| git merge --abort          | Aborts the current merge.                                                                                          |
 
 ### ➡️ Status
 | Command                                         | Description                                          |
