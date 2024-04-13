@@ -11,3 +11,9 @@ Github has a free plan for both individuals and organizations, as well as [paid 
 
 ## Git
 To know more about git setup and commands, refer to [xTLDR Git](\git)
+
+## Github dev aka VS Code Online
+Github has an online version of VSCode that allows you make edits to multiple files and commit, similar to VS Code desktop. 
+
+To activate Github dev on any github repository, press "." or replace github.com in the URL with github.dev
+![Github Dev](\images\github\githubdev.png)
