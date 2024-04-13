@@ -76,6 +76,10 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.details
 
+
+hooks:
+  - assets/hooks/open-external-links-in-new-tab.py
+
 extra:
   generator: true # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#generator-notice
   analytics:
