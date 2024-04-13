@@ -3,17 +3,23 @@
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
+        assets    # Resource files related to theming the site. 
+        images    # Folder to store image resources to be embedded within various pages. Use relative path Eg: \images\docker-but-it-works-on-my-machine.jpg
         ...       # Other markdown pages, images and other files.
 
 # Setup
 
-## Option 1: Docker Dev Container
+## Option 1: Github dev aka VS Code Online
+
+Press on "." from the github repo in browser, to go to github dev environment, a VS Code online editor on the web. Similar to VS Code, you can make edits to multiple files and do a commit, directly from browser. One caveat is, you will not be able to build the site and preview, which requires [githib codespaces](https://github.com/features/codespaces).
+
+## Option 2: Docker Dev Container
 
 In VSCode, click on the green `><` icon on the bottom left and choose 'Reopen in Container'. Inside the terminal of dev docker terminal, start the live-reloading docs server using `mkdocs serve.` 
 
 Once launched, you would be able to access the local site at `http://127.0.0.1:8000/`
 
-## Option 2: Local Setup
+## Option 3: Local Setup
 
 1. Download and install Python 3.10. 
 2. `pip install pipenv` - Install pipenv for creating and managing python virtual environments.
