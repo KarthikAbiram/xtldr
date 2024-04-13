@@ -1678,7 +1678,7 @@
 
 <h1 id="javascript">Javascript<a class="headerlink" href="#javascript" title="Permanent link"></a></h1>
 <h2 id="javascript-ebook">Javascript Ebook<a class="headerlink" href="#javascript-ebook" title="Permanent link"></a></h2>
-<p><a href="https://javascript.info/js">Javascript Ebook</a> - A free ebook style guide for learning javascript.</p>
+<p><a href="https://javascript.info/js" rel="noopener" target="_blank">Javascript Ebook</a> - A free ebook style guide for learning javascript.</p>
 <h2 id="dom-model">DOM Model<a class="headerlink" href="#dom-model" title="Permanent link"></a></h2>
 <p>The HTML structure gets converted to a DOM tree, which can then be accessed/set using javascript. </p>
 <p>Some of the most commonly used DOM functions are:
@@ -1690,7 +1690,7 @@
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#my-class h1&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">//Nested search. Searches for a h1 tag which is present inside the class &quot;my-class&quot;</span>
 </span></code></pre></div>
-PS: Above is the javascript way of querying. One of the most popular javascript libraries is jQuery, which is much more concise and easy to use.  To include jQuery, refer to <a href="https://releases.jquery.com/">jQuery releases</a> section. Include the jQuery javascript above your javascript include statement in HTML:
+PS: Above is the javascript way of querying. One of the most popular javascript libraries is jQuery, which is much more concise and easy to use.  To include jQuery, refer to <a href="https://releases.jquery.com/" rel="noopener" target="_blank">jQuery releases</a> section. Include the jQuery javascript above your javascript include statement in HTML:
 <div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://code.jquery.com/jquery-3.6.3.min.js&quot;</span><span class="w"> </span><span class="nx">integrity</span><span class="o">=</span><span class="s2">&quot;sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=&quot;</span><span class="w"> </span><span class="nx">crossorigin</span><span class="o">=</span><span class="s2">&quot;anonymous&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
 </span></code></pre></div></p>
 <h2 id="event-listener">Event Listener<a class="headerlink" href="#event-listener" title="Permanent link"></a></h2>
@@ -1715,7 +1715,7 @@ You can associate multiple HTML elements to a common function. To know which HTM
 </span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">}</span>
 </span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">);</span><span class="w"> </span>
 </span></code></pre></div>
-Although you can set an element's style property like color using "this.style.color", you may not always able to read the color property using this, unless the element style property is explicitly set. When the property is set using CSS styles, then you would not be able to read this value. For more details, please refer to <a href="https://stackoverflow.com/a/37501154">this stackover flow post</a>.</p>
+Although you can set an element's style property like color using "this.style.color", you may not always able to read the color property using this, unless the element style property is explicitly set. When the property is set using CSS styles, then you would not be able to read this value. For more details, please refer to <a href="https://stackoverflow.com/a/37501154" rel="noopener" target="_blank">this stackover flow post</a>.</p>
 <p>To add events for keyboard actions, these events can be attached to the document directly. Adding an argument to the event listener would provide details on what caused the event.
 <div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;keydown&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">key</span><span class="p">)};</span>
 </span></code></pre></div></p>
