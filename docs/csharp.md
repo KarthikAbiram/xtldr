@@ -7,11 +7,17 @@ hide:
 ## 🛠️ Setup
 1. Install [C# Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
 2. Check if .NET SDK is installed using the command `dotnet --version` in terminal. Install [.NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0), if not already installed. 
-3. To create new .NET console project from VSCode, use `dotnet new console`. To see list of available templates, use the command `dotnet new list`
+3. To create new .NET console project from VSCode, use `dotnet new console` command in the terminal. To see list of available templates, use the command `dotnet new list`
+
+## Run
+1. To run the code, use the command `dotnet run` in the terminal. Or use F5 or Ctrl + F5.
+2. If you are trying to run a webservice and getting error with htttps, run the command `dotnet dev-certs https --trust` for the computer to prompt if you want to trust the dev certificate. Confirm the choice.
 
 ## Learning
 1. [Foundational C# by FreeCodeCamp](https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/)
-2. [Microsoft Learn - Get Started with C#](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/)
+2. [Microsoft Learn - Get Started with C#](https://aka.ms/selfguidedcsharp)
+3. [Microsoft Learn - Build .NET Web API with C#](https://learn.microsoft.com/en-us/training/paths/build-dotnet-applications-csharp/)
+4. [Microsoft Learn - Build Web Apps with Blazor](https://learn.microsoft.com/en-us/training/paths/build-web-apps-with-blazor/)
 
 ## Design Patterns
 1. [C# Design Patterns by DoFactory](https://dofactory.com/net/design-patterns)
