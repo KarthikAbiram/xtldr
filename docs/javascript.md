@@ -2,9 +2,78 @@
 hide:
   - navigation
 ---
-# Javascript
-## Javascript Ebook
-[Javascript Ebook](https://javascript.info/js) - A free ebook style guide for learning javascript.
+# Javascript for Beginners
+- [Javascript for Begineers in 2 Hours](https://www.youtube.com/watch?v=e2fKYP_7B_Y) by Keerti Puruswani
+- [Javascript Ebook](https://javascript.info/js) - A free ebook style guide for learning javascript.
+
+## JS Basics
+Execute any javascript code in browser by going to any webpage, right click -> Inspect -> Console. Every browser has its own implementation of javascript engine. Eg: In Google Chrome, its called V8 Engine.
+```
+console.log('hello');
+
+//Variables and Data Types
+//Primitive/Value Types
+let x='hello world!'; //string
+let y=1.2 //number
+let z=true; //boolean
+z=7 //type of variable can be dynamically changed with reassignmnet
+let a; //undefined 
+x=null //null (not to use undefined and instead use null)
+
+console.log(x)
+console.log(typeof(x))
+
+//Reference Types - Objects, Arrays, Functions
+//Arrays and functions are objects as well.
+//Objects
+let product = {
+	name:'pixel 8',
+	category:'mobile',
+	rating:4.2
+}
+//Accessing items inside object
+console.log(product.category)
+console.log(product['category'])
+
+//Arrays
+let items = ['mobile', true, 8.0] //can contain different data types
+console.log(items[0]) //logs mobile
+
+//Functions
+function createProduct(name) {
+	console.log('Product name is '+name);
+}
+createProduct('iPhone 10');
+```
+
+Execution Context - The environment where the javascript code is executed. Default is Global Execution Context (GEC)
+Each function call creates a new execution context and gets added to the callstack
+There are two phases in the execution context - memory phase and code phase.
+- Memory phase - Variables are created
+- Code phase - Code is executed
+
+Hoisting - The concept where variables and functions be accessed before they are defined (due to memory phase before the execution of the 1st line)
+
+
+### const vs let vs var
+const and let are more strict and won't allow usage before initialization
+const - Use when value should not be changed
+let - Use when values can be changed
+var - Avoid
+
+Temporal Dead Zone - Getting reference error before variables are initialized when using const or let.
+
+const and let are block scoped, while var is global scoped
+{
+	let a=10;
+	const b=5;
+	var c=6;
+	console.log(a);
+	console.log(b);
+	console.log(c);
+}
+console.log(c); //c can be accessed outside the block as its var, but a or b cannot be accessed
+
 
 ## DOM Model
 The HTML structure gets converted to a DOM tree, which can then be accessed/set using javascript. 
