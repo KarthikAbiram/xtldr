@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 # Impact Players
-This are my book notes of the book 'Impact Players' by Liz Wiseman.
+These are my book notes of the book 'Impact Players' by Liz Wiseman.
 
 ## Who are Impact Players?
 In every organization there are Impact Players - those indispensable colleagues who can be counted on in critical situations and who consistently receive high profile assignments and new opportunities. Managers know who these top players are, whether they are center stage or behind the scenes and want more of them on their team. 

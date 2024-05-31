@@ -2,6 +2,7 @@
 hide:
   - navigation
 ---
+# Javascript
 # Javascript for Beginners
 - [Javascript for Begineers in 2 Hours](https://www.youtube.com/watch?v=e2fKYP_7B_Y) by Keerti Puruswani
 - [Javascript Ebook](https://javascript.info/js) - A free ebook style guide for learning javascript.
@@ -46,6 +47,23 @@ function createProduct(name) {
 createProduct('iPhone 10');
 ```
 
+Functions are first class citizen - we can pass functions as arguments to another functions. These are called 'Higher Order Functions'.
+```
+//Different ways in which a function can be defined
+function sum_1(a,b){
+	return a+b;
+}
+
+let sum_2 = function(a,b){
+	return a+b;
+}
+
+let sum_3 = (a,b) => a+b;
+
+//Functions can be defined within another function and returned
+
+```
+
 Execution Context - The environment where the javascript code is executed. Default is Global Execution Context (GEC)
 Each function call creates a new execution context and gets added to the callstack
 There are two phases in the execution context - memory phase and code phase.
@@ -73,6 +91,64 @@ const and let are block scoped, while var is global scoped
 	console.log(c);
 }
 console.log(c); //c can be accessed outside the block as its var, but a or b cannot be accessed
+
+Lexical scope - The concept where a variable is checked within the local scope and if not found, it will search in the outer scope.
+Function + Lexical scope - Closure
+
+### Function Callbacks, Event Queue and Event Loop
+
+```
+function callbackfn(){
+	console.log("Callback function executed");
+}
+
+setTimeout(callbackfn, 500);
+
+//Alternatively, as an anonymous function
+setTimeout(function(){console.log("Alternate way")}, 500);
+//Or
+setTimeout(()=> console.log("Another Alternate way"),500);
+```
+
+### Promises
+Object that represents the state of async. Has 3 states - Pending, fulfilled, rejected.
+
+```
+function getData() {
+	return new Promise((resolve, reject)=> {
+		setTimeout(() => {
+			resolve('data fetched');
+		},5000)
+	})
+}
+
+getData()
+	.then(result => { 
+		console.log(result);
+		})
+	.catch(error => {
+		console.error(error);
+	})
+```
+
+#### Nested Promises
+```
+myPromise = new Promise((resolve, reject) =>{
+	resolve('42');
+})
+
+myPromise.then((result)=> {console.log("1st result is ",result)}).then((result)=> {console.log("2nd result is ",result)}).then((result)=>{console.log("3rd result is "+result)}).catch(error => {console.error(error)})
+```
+
+### Async and Await
+TBD
+
+#### Callback Hell/Pyramid of Doom
+
+asyncOperation1(arg1, (result1) => { 
+	asyncOperation2(result1, (result2)=>{
+		asyncOperation3(result2, (result3)=>{ //and so on})
+	})})
 
 
 ## DOM Model

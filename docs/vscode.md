@@ -8,8 +8,13 @@ hide:
 ## Useful Commands
 | Description  | Command      |
 | ------------ | ------------ |
+| Command Palette | Ctrl + Shift + P |
+| Terminal     | Ctrl + ~     |
 | Collapse All | Ctrl + K + 0 |
 | Expand All   | Ctrl + K + J |
+
+## VSCode Online
+There is a web/browser version of VS Code which is accessible at vscode.dev.
 
 ## Recommended VSCode Extensions
 

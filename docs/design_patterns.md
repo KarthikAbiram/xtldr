@@ -48,6 +48,7 @@ TBD
 when one object changes state, all its dependents are notified and updated automatically.
 
 ### Strategy
+Choose a concreate strategy and use it.
 
 ### Command
 
