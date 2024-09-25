@@ -38,6 +38,8 @@ For installing and setup, please refer to [xTLDR Git Setup](\git\setup)
 | git clean -d --dry-run         | Dry run. Show list of files that would be removed with clean. -d recurses through directories |
 | git clean -df                  | Force remove untracked files from repository, including subdirectories                        |
 | git commit -m "commit message" | Makes a commit from the changes in staging                                                    |
+| git stash                      | Stashes the local changes, both staged and unstaged, and goes back to last commit             |
+| git stash pop                  | Reapply the previously stashed changes                                                        |
 
 ### ➡️ Branching and Merging                                                                 
 | Command                    | Description                                                                                                        |

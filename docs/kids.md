@@ -11,6 +11,9 @@ https://www.healthychildren.org/English/family-life/family-dynamics/communicatio
 ### Consequence instead of Punishmnet
 https://www.reddit.com/r/Parenting/comments/bunpte/discipline_for_a_4_year_old_what_is_working_for/
 
+## Articles
+1. https://www.emedicinehealth.com/how_to_discipline_4_year_old_who_doesnt_listen/article_em.htm
+
 ## Books
 1. How to talk so kids will listen and listen so kids will talk
 2. No Bad Kids by Janet Lansbury

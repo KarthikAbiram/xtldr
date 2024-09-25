@@ -30,3 +30,6 @@ In your repository root directory, create a folder called ".devcontainer" and cr
 ```
 
 In VSCode, click on the green `><` icon on the bottom left and choose 'Reopen in Container'.
+
+## MkDocs Extensions
+1. https://tylerdotrar.github.io/mkdocs-coverpage/

@@ -6,6 +6,14 @@ hide:
 ## Install
 1. Download and Install [LTS NodeJS](https://nodejs.org/en/download/).
 
+### VSCode Extensions
+Name: ES7+ React/Redux/React-Native snippets
+Id: dsznajder.es7-react-js-snippets
+Description: Extensions for React, React-Native and Redux in JS/TS with ES7+ syntax. Customizable. Built-in integration with prettier.
+Version: 4.4.3
+Publisher: dsznajder
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
+
 ## Create React App
 Command to create react app from command prompt:
 `npx create-react-app my-app`
