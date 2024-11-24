@@ -3,6 +3,17 @@ hide:
   - navigation
 ---
 # Design
+## Mockups
+1. [Figma](https://www.figma.com/pricing/)
+2. [Miro](https://miro.com/pricing)
+3. [JustInMind](https://www.justinmind.com/pricing)
+4. MockPlus
+5. UXPin
+6. MarvelApp
+7. ProttApp
+8. Wireframe.cc
+9.  Moqups
+
 ## Fonts
 1. [Google Fonts](https://fonts.google.com/)
  
