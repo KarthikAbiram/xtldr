@@ -10,7 +10,7 @@ hide:
 2. [Lean Canvas](https://leanstack.com/lean-canvas)
 3. [Evaluating Startups and Venture Ideas](https://medium.com/neemz-innovation/evaluating-startups-and-venture-ideas-1dc419fe4d3a)
 
-# Landing Pages
+## Landing Pages
 1. https://carrd.co/
 2. https://github.com/HugoBlox/theme-landing-page
 3. https://github.com/nordicgiant2/awesome-landing-page
@@ -18,5 +18,8 @@ hide:
 5. https://github.com/PaulleDemon/awesome-landing-pages / https://awesome-landingpages.vercel.app/
 
 
-# No Code/Low Code Lists
+## No Code/Low Code Lists
 1. [7 types of NoCode tools for all your startup needs](https://buildd.co/product/no-code-tools)
+
+## Marketplaces
+1. [Acquire](https://acquire.com/)

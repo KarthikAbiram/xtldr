@@ -6,7 +6,9 @@ hide:
 WSL stands for Windows Subsystem for Linux. It is a way to use Linux in Windows, like a Windows application.
 
 ## Install Ubuntu from Windows Store
-You can [install Ubuntu from Windows Store](https://www.microsoft.com/store/productId/9MTTCL66CPXJ). There are multiple versions available from which you can choose one among them.
+You can [install Ubuntu from Windows Store](https://www.microsoft.com/store/productId/9MTTCL66CPXJ). There are multiple versions available from which you can choose one among them.  Recommended to use an LTS (Long Term Support).
+
+If the installation gets stuck for more than 1 hour in terminal, refer to this [issue](https://github.com/microsoft/WSL/issues/6405) for workarounds. Using Ctrl + C worked for me.
 
 ## Launching Ubuntu
 1. After installing, open Ubuntu from Start Menu by searching for `Ubuntu`
