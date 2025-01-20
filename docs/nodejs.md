@@ -4,7 +4,18 @@ hide:
 ---
 # NodeJS
 ## Install
+### Windows
 [Download and Install LTS version of Nodejs](https://nodejs.org/en/download/)
+
+### Linux
+Install nvm for managing node installations:
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+```
+Install node v20:
+```
+nvm install 20
+```
 
 ## Useful Packages
 ### ExpressJS
