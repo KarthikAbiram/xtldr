@@ -3,4 +3,4 @@ hide:
   - navigation
 ---
 # Cook
-- [Tomato Briyani](/tomato_briyani)
+- [Tomato Briyani](/cook/tomato_briyani)
