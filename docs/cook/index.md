@@ -3,4 +3,4 @@ hide:
   - navigation
 ---
 # Cook
-Testing.
+- [Tomato Briyani](/tomato_briyani)
