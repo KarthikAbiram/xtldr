@@ -17,9 +17,11 @@ Install [nodeJS](https://nextjs.org/docs/app/getting-started/installation) and t
 
 ## Templates
 - [List of NextJS Templates](https://vercel.com/templates?type=saas)
-- [NextJS Template with Stripe](https://github.com/vercel/nextjs-subscription-payments) : [Video](https://www.reddit.com/r/nextjs/comments/1b4cxw1/fastest_way_to_build_a_saas_in_2024_nextjs/)
+- [NextJS SaaS Starter](https://github.com/nextjs/saas-starter)
 - [SaaS Template with Supabase](https://github.com/dzlau/stripe-supabase-saas-template)
 - [NextJS Boilerplate](https://github.com/ixartz/Next-js-Boilerplate)
+- [SaaS Boilerplate](https://github.com/ixartz/SaaS-Boilerplate)
+- [SaaS Starter Kit](https://github.com/boxyhq/saas-starter-kit)
 
 ## Resources
 - [Learn NextJS](https://nextjs.org/learn/dashboard-app)

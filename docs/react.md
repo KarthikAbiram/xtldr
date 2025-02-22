@@ -24,6 +24,9 @@ npm install
 npm start
 ```
 
+## React Templates
+TBD
+
 ## React Style Guide
 1. [Airbnb React Style Guide](https://github.com/airbnb/javascript/tree/master/react)
 ## Simple React App Example

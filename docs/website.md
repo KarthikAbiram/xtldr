@@ -23,6 +23,7 @@ Few popular options are:
 1. [Material for MKDocs](https://squidfunk.github.io/mkdocs-material/)
 2. [Docusaurus](https://docusaurus.io/)
 3. [Jekyll with Github Pages](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll)
+4. [Web Studio](https://webstudio.is/)
 
 ### Discussions
 1. [YCombinator Discussion](Chttps://news.ycombinator.com/item?id=36529880])

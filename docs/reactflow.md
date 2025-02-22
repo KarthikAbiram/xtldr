@@ -20,5 +20,6 @@ hide:
 
 ## Useful Guides
 - [Save and Restore](https://reactflow.dev/examples/interaction/save-and-restore)
+- [Cirucular and Custom Edges Library](https://github.com/tisoap/react-flow-smart-edge)
 
 
