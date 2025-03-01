@@ -1,12 +1,20 @@
+
 ---
+
 hide:
-  - navigation
+
+* navigation
+
+
 ---
+
 # MKDocs
+
 [Material for MKDocs](https://github.com/squidfunk/mkdocs-material) is an open source project where you can write your documentation using markdown, host it in git and generate a static site for you, [like this site](https://xtldr.com/).
 
 ## Docker Dev Container
-In your repository root directory, create a folder called ".devcontainer" and create a "devcontainer.json" with below file contents.  
+
+In your repository root directory, create a folder called ".devcontainer" and create a "devcontainer.json" with below file contents.
 
 ```docker
 {
@@ -32,4 +40,8 @@ In your repository root directory, create a folder called ".devcontainer" and cr
 In VSCode, click on the green `><` icon on the bottom left and choose 'Reopen in Container'.
 
 ## MkDocs Extensions
+
+
 1. https://tylerdotrar.github.io/mkdocs-coverpage/
+
+
