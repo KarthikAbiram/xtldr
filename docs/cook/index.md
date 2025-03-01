@@ -1,16 +1,6 @@
-
 ---
-
 hide:
-
-* navigation
-
-
+  - navigation
 ---
-
 # Cook
-
-* [Tomato Briyani](/cook/tomato_briyani)
-* [Briyani](/cook/briyani)
-
-
+- [Tomato Briyani](/cook/tomato_briyani)
