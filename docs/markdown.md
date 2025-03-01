@@ -77,5 +77,6 @@ As markdown is text file, it can be created and edited with any text editor. The
 ### VS Code
 VS Code has basic markdown support built-in, apart from wide variety of mark down extensions like [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one).
 
-### Obsidian
-[Obsidian](https://obsidian.md/) is an offline application that supports markdown. It is free for personal use and has a [paid plan](https://obsidian.md/pricing) for commercial use.
+### Tools
+1. [Obsidian](https://obsidian.md/) is an offline application that supports markdown.
+2. [Dendron, VSCode Extension for Personal Knowledge Management](https://www.dendron.so/)

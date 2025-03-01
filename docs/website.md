@@ -33,3 +33,6 @@ Few popular options are:
 2. [Docusaurus vs Other Tools](https://docusaurus.io/docs#comparison-with-other-tools)
 3. [Huge List of Static Site Generators](https://github.com/myles/awesome-static-generators)
 
+## Analytics
+1. [Microsoft Clarity](https://clarity.microsoft.com) | Free Forever 
+2. [Others](https://www.reddit.com/r/SaaS/comments/1i2lfa7/if_you_still_dont_have_any_paid_users_this_is_for/)
