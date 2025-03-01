@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A beginner friendly guide to get started with docker. Includes running your first docker container, essential commands and cheat sheets.">
+        <meta name="description" content="The absolute fastest way to get started with X.">
       
       
       
@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.6">
     
     
       
@@ -79,7 +79,7 @@
       
         <meta  property="og:title"  content="Docker - xTLDR" >
       
-        <meta  property="og:description"  content="A beginner friendly guide to get started with docker. Includes running your first docker container, essential commands and cheat sheets." >
+        <meta  property="og:description"  content="The absolute fastest way to get started with X." >
       
         <meta  property="og:image"  content="https://xtldr.com/assets/images/social/docker.png" >
       
@@ -95,7 +95,7 @@
       
         <meta  name="twitter:title"  content="Docker - xTLDR" >
       
-        <meta  name="twitter:description"  content="A beginner friendly guide to get started with docker. Includes running your first docker container, essential commands and cheat sheets." >
+        <meta  name="twitter:description"  content="The absolute fastest way to get started with X." >
       
         <meta  name="twitter:image"  content="https://xtldr.com/assets/images/social/docker.png" >
       
@@ -257,9 +257,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1219,7 +1217,7 @@
         
   
   <span class="md-ellipsis">
-    gRPC
+    Grpc
     
   </span>
   
@@ -1461,7 +1459,7 @@
         
   
   <span class="md-ellipsis">
-    MKDocs
+    Mkdocs
     
   </span>
   
@@ -1967,7 +1965,7 @@
         
   
   <span class="md-ellipsis">
-    VSCode
+    Vscode
     
   </span>
   
@@ -2080,8 +2078,6 @@
               </div>
             
             
-              
-                
               
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
@@ -2234,15 +2230,21 @@
               <article class="md-content__inner md-typeset">
                 
                   
-  
 
 
 
-
+<hr />
+<p>hide:</p>
+<ul>
+<li>navigation
+  comments: true
+  description: A beginner friendly guide to get started with docker. Includes running your first docker container, essential commands and cheat sheets.</li>
+</ul>
+<hr />
 <h1 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link"></a></h1>
 <p>Docker is a containerization technology which helps to package the application along with all its dependencies and run times, so that there are no dependencies/expectations on the end user system. It is similar to a virtual machine but a lot lighter.</p>
 <p>A one image explanation of docker:</p>
-<p><a class="glightbox" href="\images\docker-but-it-works-on-my-machine.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img :=":" alt="but, it works on my machine!" src="\images\docker-but-it-works-on-my-machine.jpg" style="height:300px" /></a></p>
+<p><a class="glightbox" href="%5Cimages%5Cdocker-but-it-works-on-my-machine.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img :=":" alt="but, it works on my machine!" src="%5Cimages%5Cdocker-but-it-works-on-my-machine.jpg" style="height:300px" /></a></p>
 <p><em>Programmer:  ...but, it works on my machine!<br/>
 Manager: Do we then ship your computer!?<br/>
 Docker: Why not? 😁</em></p>
@@ -2296,42 +2298,42 @@ Docker: Why not? 😁</em></p>
 <p><a href="https://docs.docker.com/get-started/docker_cheatsheet.pdf" rel="noopener" target="_blank">Docker Cheat Sheet</a></p>
 <h2 id="running-your-first-docker-container">🐋 Running Your First Docker Container<a class="headerlink" href="#running-your-first-docker-container" title="Permanent link"></a></h2>
 <p>You can search for images at <a href="https://hub.docker.com/" rel="noopener" target="_blank">docker hub</a>. In the docker image page, you would have instructions on how to pull the image and use it. Example: <a href="https://hub.docker.com/_/mongo" rel="noopener" target="_blank">https://hub.docker.com/_/mongo</a></p>
-<p>To pull (download) an image:
+<p>To pull (download) an image:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>pull<span class="w"> </span>&lt;image_name&gt;
-</span></code></pre></div></p>
-<p>Use 'docker run' to create and run a new container. If the image can't be found, it will automatically pull.
+</span></code></pre></div>
+<p>Use 'docker run' to create and run a new container. If the image can't be found, it will automatically pull.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>run<span class="w"> </span>&lt;image_name&gt;
 </span></code></pre></div>
-Or, alternatively:
+<p>Or, alternatively:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>create<span class="w"> </span>&lt;image_name&gt;<span class="w"> </span><span class="c1"># Outputs container id. Use this for the docker start command</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>docker<span class="w"> </span>start<span class="w"> </span>&lt;container_name_or_container_id&gt;
-</span></code></pre></div></p>
+</span></code></pre></div>
 <p>To run it as a container in background (detached) mode:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>&lt;image_name&gt;
 </span></code></pre></div>
-<p>To run it with a custom name for the container:
+<p>To run it with a custom name for the container:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--name<span class="w"> </span>&lt;container_name&gt;<span class="w"> </span>&lt;image_name&gt;
-</span></code></pre></div></p>
+</span></code></pre></div>
 <p>Container name needs to be unique. Rerunning the above command again would result in an error.</p>
-<p>To delete a container:
+<p>To delete a container:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker<span class="w"> </span>rm<span class="w"> </span>&lt;container_name&gt;
-</span></code></pre></div></p>
-<p>To run the container and map the host port with the container port:
+</span></code></pre></div>
+<p>To run the container and map the host port with the container port:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--name<span class="w"> </span>&lt;container_name&gt;<span class="w"> </span>-p<span class="w"> </span>&lt;host_port&gt;:&lt;container_port&gt;<span class="w"> </span>&lt;image_name&gt;
-</span></code></pre></div></p>
+</span></code></pre></div>
 <p>Some configurations like naming the container, mapping the port can be made only when creating a container and these configurations can't be edited or modified after the container is created. If you need to modify them, you need to delete and recreate the container.</p>
-<p>To stop the container:
+<p>To stop the container:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>stop<span class="w"> </span>&lt;container_name_or_container_id&gt;
-</span></code></pre></div></p>
-<p>To start the container:
+</span></code></pre></div>
+<p>To start the container:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker<span class="w"> </span>start<span class="w"> </span>&lt;container_name_or_container_id&gt;
-</span></code></pre></div></p>
+</span></code></pre></div>
 <h3 id="docker-container-shell">🖥️ Docker Container Shell<a class="headerlink" href="#docker-container-shell" title="Permanent link"></a></h3>
-<p>To get into the terminal of a running docker container:
+<p>To get into the terminal of a running docker container:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>container-name<span class="w"> </span>sh
 </span></code></pre></div>
-If 'sh' didn't work, you can try 'bash' (one of these two are typically expected within a container).</p>
-<p>Once inside the terminal of the docker container, you can run commands within the container. Few useful commands to use here are:
+<p>If 'sh' didn't work, you can try 'bash' (one of these two are typically expected within a container).</p>
+<p>Once inside the terminal of the docker container, you can run commands within the container. Few useful commands to use here are:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># List Directory</span>
 </span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>ls
 </span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
@@ -2343,7 +2345,7 @@ If 'sh' didn't work, you can try 'bash' (one of these two are typically expected
 </span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
 </span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="c1"># List the environment variables within the container</span>
 </span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>env
-</span></code></pre></div></p>
+</span></code></pre></div>
 <h3 id="logs">📜 Logs<a class="headerlink" href="#logs" title="Permanent link"></a></h3>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Get logs from container</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>docker<span class="w"> </span>container-name<span class="w"> </span>logs
@@ -2356,44 +2358,45 @@ If 'sh' didn't work, you can try 'bash' (one of these two are typically expected
 </span></code></pre></div>
 <h3 id="docker-volume">🗄️ Docker Volume<a class="headerlink" href="#docker-volume" title="Permanent link"></a></h3>
 <p>The file system in containers are would be lost when the containers are restarted. To avoid this and have data persistence, we do a mapping of host volume to the container volume.</p>
-<p>Example:
+<p>Example:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-v<span class="w"> </span>/path/on/host:/path/in/container<span class="w"> </span>my_image
 </span></code></pre></div>
-It is possible to provide a friendly name for the host volume, instead of providing an absolute path.
+<p>It is possible to provide a friendly name for the host volume, instead of providing an absolute path.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-v<span class="w"> </span>my_named_volume:/path/in/container<span class="w"> </span>my_image
-</span></code></pre></div></p>
+</span></code></pre></div>
 <h2 id="building-docker-image">🧊 Building Docker Image<a class="headerlink" href="#building-docker-image" title="Permanent link"></a></h2>
 <h3 id="dockerfile">📄 DockerFile<a class="headerlink" href="#dockerfile" title="Permanent link"></a></h3>
-<p>File name must be called 'DockerFile'. Some useful commands to use inside the dockerfile are:
+<p>File name must be called 'DockerFile'. Some useful commands to use inside the dockerfile are:</p>
 <div class="language-docker highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">-</span><span class="w"> </span>Source<span class="w"> </span>Image<span class="w"> </span>on<span class="w"> </span>top<span class="w"> </span>of<span class="w"> </span>which<span class="w"> </span>we<span class="w"> </span>are<span class="w"> </span>building<span class="w"> </span>our<span class="w"> </span>image
 </span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="k">ENV</span><span class="w"> </span>-<span class="w"> </span>Set<span class="w"> </span>an<span class="w"> </span>environment<span class="w"> </span>variable<span class="w"> </span><span class="o">(</span>instead<span class="w"> </span>of<span class="w"> </span>this,<span class="w"> </span>preferable<span class="w"> </span>to<span class="w"> </span>use<span class="w"> </span>env<span class="w">  </span>externally<span class="w"> </span>using<span class="w"> </span>docker<span class="w"> </span>compose<span class="o">)</span>
 </span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">RUN</span><span class="w"> </span>-<span class="w"> </span>Run<span class="w"> </span>a<span class="w"> </span><span class="nb">command</span><span class="w"> </span>inside<span class="w"> </span>the<span class="w"> </span>container.<span class="w"> </span>Can<span class="w"> </span>use<span class="w"> </span>multiple<span class="w"> </span>RUN<span class="w"> </span>commands<span class="w"> </span><span class="k">in</span><span class="w"> </span>a<span class="w"> </span>docker<span class="w"> </span>file.
 </span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="k">COPY</span><span class="w"> </span>-<span class="w"> </span>Copy<span class="w"> </span>from<span class="w"> </span>host<span class="w"> </span>to<span class="w"> </span>container
 </span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="k">CMD</span><span class="w"> </span>-<span class="w"> </span>Entry<span class="w"> </span>Point<span class="w"> </span>Command<span class="w"> </span><span class="k">for</span><span class="w"> </span>container.<span class="w"> </span>Only<span class="w"> </span><span class="m">1</span><span class="w"> </span>per<span class="w"> </span>container.
-</span></code></pre></div></p>
+</span></code></pre></div>
 <h3 id="docker-build">🏗️ Docker Build<a class="headerlink" href="#docker-build" title="Permanent link"></a></h3>
-<p>Build a docker image with the provided name and tag. 
+<p>Build a docker image with the provided name and tag.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w">  </span><span class="o">[</span>image-name<span class="o">]</span>:<span class="o">[</span>version<span class="o">]</span><span class="w"> </span>.<span class="w"> </span>
-</span></code></pre></div></p>
+</span></code></pre></div>
 <p>The last argument in above command indicates the build context being passed for the docker build, which would be used by the COPY and other such commands. Using "." indicates to pass the current directory for the build context.</p>
 <details>
 <summary>Private Docker Registry</summary>
-<p>One option is to create a docker registry in AWS, by choosing ECR - Elastic Container Registry. AWS ECR supports maintaining only 1 container image in ECR. There are other options like 'Digital Ocean', where they allow having multiple images pushed to a single docker registry.</p>
-<p>To push an image to a private repository:</p>
-<ol>
-<li>You need to login to the docker's private repository (once at the beginning of the session).</li>
-<li>Then use docker push. Example: 
-<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>docker push [docker-registry-domain/container-name:tag]
-</span></code></pre></div></li>
-</ol>
-<p>AWS CLI and credentials has to be configured.</p>
 </details>
+<p>One option is to create a docker registry in AWS, by choosing ECR - Elastic Container Registry. AWS ECR supports maintaining only 1 container image in ECR. There are other options like 'Digital Ocean', where they allow having multiple images pushed to a single docker registry.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>To push an image to a private repository:
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>1. You need to login to the docker&#39;s private repository (once at the beginning of the session).
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>2. Then use docker push. Example: 
+</span></code></pre></div>
+<p>docker push [docker-registry-domain/container-name:tag]</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>AWS CLI and credentials has to be configured.
+</span></code></pre></div>
 <h2 id="docker-tutorials">🎬 Docker Tutorials<a class="headerlink" href="#docker-tutorials" title="Permanent link"></a></h2>
 <p><a href="https://www.youtube.com/watch?v=3c-iBn73dDE" rel="noopener" target="_blank">Docker Tutorial for Beginners by TechWorld with Nana</a></p>
 <h2 id="docker-compose-examples">🐳 Docker Compose Examples<a class="headerlink" href="#docker-compose-examples" title="Permanent link"></a></h2>
 <p><a href="https://github.com/docker/awesome-compose" rel="noopener" target="_blank">Docker Compose Examples</a></p>
 <details>
 <summary>Other Terminologies</summary>
+</details>
 <table>
 <thead>
 <tr>
@@ -2428,7 +2431,6 @@ It is possible to provide a friendly name for the host volume, instead of provid
 </tr>
 </tbody>
 </table>
-</details>
 
 
 
@@ -2451,7 +2453,7 @@ It is possible to provide a friendly name for the host volume, instead of provid
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 21, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 1, 2025</span>
   </span>
 
     
@@ -2484,6 +2486,11 @@ It is possible to provide a friendly name for the host volume, instead of provid
           <img src="https://avatars.githubusercontent.com/u/50194596?v=4&size=72" alt="KarthikAbiram">
         </a>
       
+        <a href="https://github.com/web-flow" class="md-author" title="@web-flow">
+          
+          <img src="https://avatars.githubusercontent.com/u/19864447?v=4&size=72" alt="web-flow">
+        </a>
+      
       
       
     </nav>
@@ -2496,66 +2503,9 @@ It is possible to provide a friendly name for the host volume, instead of provid
   
 
 
-  
-
 
 <!-- https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/ -->
 
-
-<!-- <h2 id="__comments">Comments</h2> -->
-
-<!-- Snippet from giscus starts -->
-<script
-  src="https://giscus.app/client.js"
-  data-repo="KarthikAbiram/xtldr-comments"
-  data-repo-id="R_kgDOLHcRIA"
-  data-category="Announcements"
-  data-category-id="DIC_kwDOLHcRIM4CckJv"
-  data-mapping="pathname"
-  data-strict="1"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="top"
-  data-theme="preferred_color_scheme"
-  data-lang="en"
-  data-loading="lazy"
-  crossorigin="anonymous"
-  async
-></script>
-<!-- Snippet from giscus ends -->
-
-<!-- Synchronize Giscus theme with palette -->
-<script>
-  var giscus = document.querySelector("script[src*=giscus]");
-
-  // Set palette on initial load
-  var palette = __md_get("__palette");
-  if (palette && typeof palette.color === "object") {
-    var theme = palette.color.scheme === "slate" ? "transparent_dark" : "light";
-
-    // Instruct Giscus to set theme
-    giscus.setAttribute("data-theme", theme);
-  }
-
-  // Register event handlers after documented loaded
-  document.addEventListener("DOMContentLoaded", function () {
-    var ref = document.querySelector("[data-md-component=palette]");
-    ref.addEventListener("change", function () {
-      var palette = __md_get("__palette");
-      if (palette && typeof palette.color === "object") {
-        var theme =
-          palette.color.scheme === "slate" ? "transparent_dark" : "light";
-
-        // Instruct Giscus to change theme
-        var frame = document.querySelector(".giscus-frame");
-        frame.contentWindow.postMessage(
-          { giscus: { setConfig: { theme } } },
-          "https://giscus.app"
-        );
-      }
-    });
-  });
-</script>
 
                 
               </article>
@@ -2576,8 +2526,6 @@ It is possible to provide a friendly name for the host volume, instead of provid
         <footer class="md-footer">
   
     
-      
-        
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
@@ -2642,7 +2590,7 @@ It is possible to provide a friendly name for the host volume, instead of provid
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.indexes", "navigation.footer", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
