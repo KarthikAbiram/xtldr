@@ -12,6 +12,8 @@ hide:
 ## Create React App
 Command to create react app from command prompt:
 `npx create-react-app my-app`
+Or using vite:
+`npm create vite@latest`
 
 ### To Upgrade Dependencies
 Install npm-check-updates globally using the command:

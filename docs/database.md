@@ -15,6 +15,10 @@ hide:
 ## Database Naming Conventions
 [Database Naming Conventions by Launch by Lunch](https://launchbylunch.com/posts/2014/Feb/16/sql-naming-conventions/)
 
+## In Brower Databases
+1. [Dexie](https://dexie.org/docs/Tutorial/React)
+2. [PouchDB](https://pouchdb.com/getting-started.html)
+
 ## Resouces
 1. [Databases with Free Tier](https://free-for.dev/#/?id=managed-data-services)
 
