@@ -56,6 +56,12 @@ For installing and setup, please refer to [xTLDR Git Setup](\git\setup)
 | git status                                      | Displays the active branch and list of local changes |
 | git log --oneline --graph --decorate [-n count] | Displays last n commits of the active branch         |
 
+### Compare
+| Command                                         | Description                                          |
+| ----------------------------------------------- | ---------------------------------------------------- |
+| git diff --name-only <commit1> <commit2>        | Get list of modified files between two commit hashes |
+| git diff --name-only <commit1> <commit2> | while read file; do echo "$(pwd)/$file"; done | Get absolute file paths of differences. Use in git bash |
+
 ## 📑 Cheatsheets
 - [Git Cheatsheet by Github](https://education.github.com/git-cheat-sheet-education.pdf)
 - [Git Cheatsheet by Gitlab](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
