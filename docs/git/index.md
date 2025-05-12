@@ -59,8 +59,12 @@ For installing and setup, please refer to [xTLDR Git Setup](\git\setup)
 ### Compare
 | Command                                         | Description                                          |
 | ----------------------------------------------- | ---------------------------------------------------- |
-| git diff --name-only <commit1> <commit2>        | Get list of modified files between two commit hashes |
-| git diff --name-only <commit1> <commit2> | while read file; do echo "$(pwd)/$file"; done | Get absolute file paths of differences. Use in git bash |
+| `git diff --name-only <commit1> <commit2>`        | Get list of modified files between two commit hashes |
+
+To get absolute file paths of differences, use below command in git bash:
+```
+git diff --name-only <commit1> <commit2> | while read file; do echo "$(pwd)/$file"; done
+```
 
 ## 📑 Cheatsheets
 - [Git Cheatsheet by Github](https://education.github.com/git-cheat-sheet-education.pdf)
