@@ -6,10 +6,14 @@ hide:
 # gRPC
 
 ## Courses
+- [Complete gRPC Course](https://www.youtube.com/playlist?list=PLy_6D98if3UJd5hxWNfAqKMr15HZqFnqf)
 - [Introduction to Protocol Buffers](https://training.linuxfoundation.org/training/introduction-to-protocol-buffers-lfs145/) by Linux Foundation
 
-## gRPC GUIs
-TBD - Refer to be [awesome gRPC curated list](https://github.com/grpc-ecosystem/awesome-grpc?tab=readme-ov-file#tools-gui) for the gRPC GUIs available, similar to Postman.
+## Tools
+1. [grpcurl](https://github.com/fullstorydev/grpcurl)
+2. [grpcui](https://github.com/fullstorydev/grpcui)
+3. [grpc-gateway](https://github.com/grpc-ecosystem/grpc-gateway)
+4. [grpc-dump](https://github.com/bradleyjkemp/grpc-tools?tab=readme-ov-file#grpc-dump)
 
 ## Curated Lists
 1. [Awesome gRPC](https://github.com/grpc-ecosystem/awesome-grpc) - Curated list of useful tools and resources for use in gRPC ecosystem
