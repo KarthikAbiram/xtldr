@@ -56,3 +56,6 @@ go build -o add.exe add.go
 
 ## Go Microservices
 1. [micro](https://github.com/micro/micro)
+
+## Curated Lists
+1. [Awesome go](https://github.com/avelino/awesome-go)
