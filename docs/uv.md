@@ -19,13 +19,20 @@ There are also other [alternate installation options](https://docs.astral.sh/uv/
 
 ## Getting Started
 ```
-uv new - Create a new uv project
+uv init - Create a new uv project
 uv pin python 3.11 - Specify the python version to use for the project
 uv add grpc - Install package
 uv run main.py - Run the starter script
 uv python list - Lists all python versions available + can be downloaded
 uv python install 3.12 - Download and install python
 ```
+
+## Project Templates
+1. uvinit
+```
+uvx uvinit
+```
+2. [cookiecutter-uv](https://github.com/fpgmaas/cookiecutter-uv)
 
 ## References
 - [uv for Virtual Environments](https://docs.astral.sh/uv/guides/projects/)
