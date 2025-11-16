@@ -11,12 +11,12 @@ uv add pydantic
 ```
 
 ## Quick Start
-```
-from pydantic import BaseModel, Field
+```python
 from typing import List, Dict, Optional
 from datetime import datetime
 import json
 
+from pydantic import BaseModel, Field
 
 class User(BaseModel):
     id: int
