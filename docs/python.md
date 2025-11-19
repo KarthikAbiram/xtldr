@@ -4,10 +4,47 @@ hide:
 ---
 # Python
 
+## Install
+Download and install from [python.org](https://www.python.org/downloads/)
+
+## Quick Start
+- Install [uv](/uv)
+```
+uv init my-project --package
+uv sync
+```
+
+## Basics
+- Module refers to a .py file.
+- Package refers to a folder with __init__.py along with multiple *.py files.
+- A package can have subpackages (which are subfolders with each having their own __init__.py file)
+- Recommended to use absolute imports (imports starting from top level folder/package), instead of relative imports (which is relative to current file)
+
+```
+my_app/
+└── src/
+    └── my_app/
+        ├── __init__.py
+        ├── core/
+        │   ├── __init__.py
+        │   └── engine.py
+        ├── utils/
+        │   ├── __init__.py
+        │   └── math_utils.py
+        └── main.py
+```
+Example absolute import in main.py:
+```python
+from my_app.core.engine import Engine
+from my_app.utils.math_utils import add
+```
+Example absolute import in engine.py
+```python
+from my_app.utils.math_utils import add
+```
+
 ## Python Tools
 - [uv](/uv)
-- [Poetry](/poetry)
-- [pipx](/pipx)
 - [Cookie Cutter](/Cookiecutter)
 
 ## Project Templates
