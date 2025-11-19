@@ -45,7 +45,13 @@ from my_app.utils.math_utils import add
 
 ## Python Tools
 - [uv](/uv)
+- [pytest](/pytest)
+- [fastapi](/fastapi)
+- [pydantic](/pydantic)
+- [grpc](/grpc)
 - [Cookie Cutter](/Cookiecutter)
+- [pipx](/pipx)
+- [poetry](/poetry)
 
 ## Project Templates
 - [uvinit](https://github.com/jlevy/uvinit)
