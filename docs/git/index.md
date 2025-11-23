@@ -127,3 +127,11 @@ git reset [file-name-2]
 git commit
 ```
 
+### Finding Old Branches
+Use below code in git bash to get branch names with commits from current author between two date ranges.
+```
+author_name=$(git config user.name)
+for c in $(git log --all --author="$author_name" --since="2024-06-01" --until="2024-06-15" --pretty=format:"%H"); do
+    git branch -a --contains $c
+done | sort | uniq
+```

@@ -53,6 +53,9 @@ from my_app.utils.math_utils import add
 - [pipx](/pipx)
 - [poetry](/poetry)
 
+## Libraries
+- [tqdm](https://github.com/tqdm/tqdm) - Progress bar in commandline like 76%|████████████████████████        | 7568/10000 [00:33<00:10, 229.00it/s]
+
 ## Project Templates
 - [uvinit](https://github.com/jlevy/uvinit)
 - [Cookiecutter uv](https://github.com/fpgmaas/cookiecutter-uv)
