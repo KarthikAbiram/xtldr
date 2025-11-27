@@ -43,6 +43,28 @@ Example absolute import in engine.py
 from my_app.utils.math_utils import add
 ```
 
+## Async
+1. Asynchronous execution using async...await
+2. We cannot use await in top level function. Await can be used only inside an async function. 
+3. Use tasks to start multiple coroutines in parallel and gather to wait on them.
+```
+import asyncio
+
+async def greet(name, delay):
+    await asyncio.sleep(delay)
+    print(f"Hello, {name} after {delay} seconds!")
+
+async def main():
+    tasks = [
+        asyncio.create_task(greet("Alice", 2)),
+        asyncio.create_task(greet("Bob", 1)),
+        asyncio.create_task(greet("Carol", 3)),
+    ]
+    await asyncio.gather(*tasks)  # Wait for all tasks to finish
+
+asyncio.run(main())
+```
+
 ## Python Tools
 - [uv](/uv)
 - [pytest](/pytest)
