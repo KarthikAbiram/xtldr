@@ -17,12 +17,11 @@ Run:
 ```bash
 uv run phoenix serve
 ```
-Phoenix would now be available at http://127.0.0.1:6006
+Phoenix would now be available at [http://127.0.0.1:6006](http://127.0.0.1:6006)
 
 ## Quick Start
 ### Tracing
 Install and register tracer in the project.
-Reference: https://arize.com/docs/phoenix/get-started/get-started-tracing#local-self-hosted
 ```bash
 uv add arize-phoenix-otel
 uv add openinference-instrumentation-openai
@@ -56,8 +55,11 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 ```
 ### Prompt Playground
-1. Run Phoenix local and go to http://127.0.0.1:6006/playground
+1. Run Phoenix local and go to [http://127.0.0.1:6006/playground](http://127.0.0.1:6006/playground)
 2. Add OpenAI key.
 3. Choose model, system prompt and user prompt.
 4. Run.
 5. Save prompts with versioning.
+
+## References
+1. [Phoenix Getting Started](Reference: https://arize.com/docs/phoenix/get-started/get-started-tracing#local-self-hosted)

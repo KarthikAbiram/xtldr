@@ -54,6 +54,7 @@ extra_css:
   - assets/github-permalink-style.css
   - assets/theme.css
   - assets/search.css
+  - assets/hide-footer.css
 
 markdown_extensions:
   - attr_list
