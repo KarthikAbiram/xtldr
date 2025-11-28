@@ -1,4 +1,4 @@
 /* Hide footer navigation */
 .md-footer__inner {
-  display: none;
+ display: none !important;
 }
