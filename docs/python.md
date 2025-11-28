@@ -47,7 +47,7 @@ from my_app.utils.math_utils import add
 1. Asynchronous execution using async...await
 2. We cannot use await in top level function. Await can be used only inside an async function. 
 3. Use tasks to start multiple coroutines in parallel and gather to wait on them.
-```
+```python
 import asyncio
 
 async def greet(name, delay):
@@ -61,6 +61,30 @@ async def main():
         asyncio.create_task(greet("Carol", 3)),
     ]
     await asyncio.gather(*tasks)  # Wait for all tasks to finish
+
+asyncio.run(main())
+```
+Or with a timeout:
+```python
+import asyncio
+
+async def greet(name, delay):
+    await asyncio.sleep(delay)
+    print(f"Hello, {name} after {delay} seconds!")
+
+async def main():
+    tasks = [
+        asyncio.create_task(greet("Alice", 2)),
+        asyncio.create_task(greet("Bob", 1)),
+        asyncio.create_task(greet("Carol", 3)),
+    ]
+
+    try:
+        await asyncio.wait_for(asyncio.gather(*tasks), timeout=2.5)
+    except asyncio.TimeoutError:
+        print("Timed out!")
+        for t in tasks:
+            t.cancel()
 
 asyncio.run(main())
 ```
