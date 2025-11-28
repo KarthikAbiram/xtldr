@@ -17,11 +17,14 @@ from openai import AsyncOpenAI
 client = AsyncOpenAI()
 
 async def main():
-    resp = await client.chat.completions.create(
+    resp = await client.responses.create(
         model="gpt-4.1",
-        messages=[{"role": "user", "content": "Hello!"}]
+        input=[
+            {"role": "user", "content": "Hello!"}
+        ]
     )
-    print(resp.choices[0].message["content"])
+
+    print(resp.output_text)
 
 asyncio.run(main())
 ```

@@ -44,15 +44,16 @@ tracer = tracer_provider.get_tracer(__name__)
 # OpenAI Example
 if not (openai_api_key := os.getenv("OPENAI_API_KEY")):
     openai_api_key = getpass("🔑 Enter your OpenAI API key: ")
-
 os.environ["OPENAI_API_KEY"] = openai_api_key
 
 client = openai.OpenAI()
-response = client.chat.completions.create(
+response = client.responses.create(
     model="gpt-4o",
-    messages=[{"role": "user", "content": "Why is the sky blue?"}],
+    input=[
+        {"role": "user", "content": "Why is the sky blue?"}
+    ]
 )
-print(response.choices[0].message.content)
+print(response.output_text)
 ```
 ### Prompt Playground
 1. Run Phoenix local and go to [http://127.0.0.1:6006/playground](http://127.0.0.1:6006/playground)
