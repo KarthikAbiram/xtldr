@@ -55,3 +55,9 @@ response = client.chat.completions.create(
 )
 print(response.choices[0].message.content)
 ```
+### Prompt Playground
+1. Run Phoenix local and go to http://127.0.0.1:6006/playground
+2. Add OpenAI key.
+3. Choose model, system prompt and user prompt.
+4. Run.
+5. Save prompts with versioning.
