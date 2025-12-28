@@ -6,14 +6,14 @@ hide:
 # PC
 
 ## Install Software
-Install essential software using [ninite.com](ninite.com)
+Install essential software using [ninite.com](https://ninite.com/)
 
 ## CPU Test
 CPU-Z Bench
 
 ## GPU Test
 [Heaven Benchmark](https://benchmark.unigine.com/heaven)
-[FurMark]](https://geeks3d.com/furmark/?lang=1)
+[FurMark](https://geeks3d.com/furmark/?lang=1)
 
 ## Hard Disk Test
 [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/)

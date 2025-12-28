@@ -1,6 +1,8 @@
 
 
 ## Resources 
+- https://us.ovhcloud.com/vps/
+- https://www.hetzner.com/cloud
 - https://www.lade.io/pricing
 - https://appwrite.io/pricing
 - https://www.koyeb.com/pricing
