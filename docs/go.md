@@ -10,8 +10,16 @@ hide:
 2. Install [Go Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=golang.go).
 
 ## Quick Start
-1. A sample application, which will add two numbers passed from cmdline arguments and returns the result.
-2. Create add.go with below code:
+1. Initialize project in a new folder.
+```
+go mod init myapp
+```
+2. To install packages:
+```
+go get <pkg-name>
+```
+3. A sample application, which will add two numbers passed from cmdline arguments and returns the result.
+4. Create add.go with below code:
 ```
 package main
 
