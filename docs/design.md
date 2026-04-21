@@ -24,6 +24,13 @@ hide:
 ## Emoji
 1. [Openmoji](https://openmoji.org/)
 
+## Favicon Generator
+1. [Real Favicon Generator](https://realfavicongenerator.net/)
+
+## Image Editors
+1. [Inkscape](https://inkscape.org/)
+2. [Graphite](https://editor.graphite.art/)
+
 ## Discover UI Patterns
 1. [Dribble](https://dribbble.com/) - Discover sample web designs
 2. [UI Patterns](https://ui-patterns.com/patterns) and [Screenshots](https://ui-patterns.com/explore) - UI Patterns for typical problems which we can compare and decide, without reinventing the wheel
